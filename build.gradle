@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "http://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+//Only edit below this line, the above code adds and enables the nessasary things for Forge to be setup.
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+group= "com.globbypotato.rockhounding_rocks"
+archivesBaseName = "rockhounding_rocks"
+version = "${version_mc}-${version_mod}"
+
+minecraft {
+    version = "1.10.2-12.18.3.2254"
+    runDir = "run"
+    mappings = "snapshot_20161111"
+    makeObfSourceJar = false
+	replace '${version_mod}', project.version
+}
+
+repositories {
+    maven { // JEI
+        url "http://dvs1.progwml6.com/files/maven"
+    }
+	
+    maven { // CraftTweaker
+        url "http://maven.blamejared.com"
+    }
+
+}
+
+dependencies {
+    deobfCompile "mezz.jei:jei_${version_mc}:${version_jei}"
+    deobfCompile "MineTweaker3:MineTweaker3-MC1102-Main:${version_ct}"
+}
+
+processResources
+{
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+        
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
