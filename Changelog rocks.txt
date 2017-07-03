@@ -1,3 +1,12 @@
+1.04 changelog
+	Cutting Station
+		Lava can be piped in as fuel and lava buckets used on it
+		Uniformed machine recipes to the Chemistry style (alternative if Chemistry is available)
+		Induction Interface can be used without Chemistry (requires a custom recipe of player's choise to be craftable)
+	Misc fixes
+		Some code cleaning
+		Misc fixes
+
 v1.03 changelog
 	All machines
 		Output items can be extracted from any side
