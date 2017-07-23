@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_deboss",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/blocksB_blue_tiger_eye",
+        "0": "rockhounding_rocks:blocks/blocksB_blue_tiger_eye",
+        "1": "rockhounding_rocks:blocks/overlay_deboss"
+    }
+}

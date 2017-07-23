@@ -1,0 +1,8 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_tetras_full",
+    "textures": {
+        "particle": "minecraft:blocks/bone_block_side",
+        "0": "minecraft:blocks/bone_block_side"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_segmented",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/blocksB_brown_aventurine",
+        "0": "rockhounding_rocks:blocks/blocksB_brown_aventurine"    
+    }
+
+}

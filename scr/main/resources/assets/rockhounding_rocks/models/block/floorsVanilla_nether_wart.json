@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_floors",
+    "textures": {
+        "particle": "minecraft:blocks/nether_wart_block",
+        "0": "minecraft:blocks/nether_wart_block",
+        "1": "rockhounding_rocks:blocks/overlay_floor"
+    }
+}

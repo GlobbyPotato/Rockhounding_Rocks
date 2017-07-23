@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=black_aventurine": 	{"model" : "rockhounding_rocks:debossA_black_aventurine"},
+		"type=basanite": 			{"model" : "rockhounding_rocks:debossA_basanite"},
+		"type=black_granite": 		{"model" : "rockhounding_rocks:debossA_black_granite"},
+		"type=jet": 				{"model" : "rockhounding_rocks:debossA_jet"},
+		"type=luxulyanite": 		{"model" : "rockhounding_rocks:debossA_luxulyanite"},
+		"type=black_onyx": 			{"model" : "rockhounding_rocks:debossA_black_onyx"},
+		"type=portoro": 			{"model" : "rockhounding_rocks:debossA_portoro"},
+		"type=snowflake_obsidian": 	{"model" : "rockhounding_rocks:debossA_snowflake_obsidian"},
+		"type=black_tiger_eye": 	{"model" : "rockhounding_rocks:debossA_black_tiger_eye"},
+		"type=slate": 				{"model" : "rockhounding_rocks:debossA_slate"},
+		"type=gabbro": 				{"model" : "rockhounding_rocks:debossA_gabbro"},
+		"type=blue_aventurine": 	{"model" : "rockhounding_rocks:debossA_blue_aventurine"},
+		"type=chrysocolla": 		{"model" : "rockhounding_rocks:debossA_chrysocolla"},
+		"type=blue_granite": 		{"model" : "rockhounding_rocks:debossA_blue_granite"},
+		"type=blue_jasper": 		{"model" : "rockhounding_rocks:debossA_blue_jasper"},
+		"type=labradorite": 		{"model" : "rockhounding_rocks:debossA_labradorite"}
+    }
+}

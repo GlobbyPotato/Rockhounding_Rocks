@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=stone": 				{"model" : "rockhounding_rocks:debossVanilla_stone"},
+		"type=cobblestone": 		{"model" : "rockhounding_rocks:debossVanilla_cobblestone"},
+		"type=hardened_clay": 		{"model" : "rockhounding_rocks:debossVanilla_hardened_clay"},
+		"type=brown_netherbrick": 	{"model" : "rockhounding_rocks:debossVanilla_brown_netherbrick"},
+		"type=red_netherbrick": 	{"model" : "rockhounding_rocks:debossVanilla_red_netherbrick"},
+		"type=sandstone": 			{"model" : "rockhounding_rocks:debossVanilla_sandstone"},
+		"type=red_sandstone": 		{"model" : "rockhounding_rocks:debossVanilla_red_sandstone"},
+		"type=bone_block": 			{"model" : "rockhounding_rocks:debossVanilla_bone_block"},
+		"type=end_stone": 			{"model" : "rockhounding_rocks:debossVanilla_end_stone"},
+		"type=granite": 			{"model" : "rockhounding_rocks:debossVanilla_granite"},
+		"type=andesite": 			{"model" : "rockhounding_rocks:debossVanilla_andesite"},
+		"type=diorite": 			{"model" : "rockhounding_rocks:debossVanilla_diorite"},
+		"type=prismarine": 				{"model" : "rockhounding_rocks:debossVanilla_prismarine"},
+		"type=quartz": 				{"model" : "rockhounding_rocks:debossVanilla_quartz"},
+		"type=nether_wart": 		{"model" : "rockhounding_rocks:debossVanilla_nether_wart"},
+		"type=snow": 				{"model" : "rockhounding_rocks:debossVanilla_snow"}
+    }
+}

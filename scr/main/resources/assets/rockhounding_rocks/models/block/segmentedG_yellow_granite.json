@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_segmented",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/blocksG_yellow_granite",
+        "0": "rockhounding_rocks:blocks/blocksG_yellow_granite"
+    }
+
+}

@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=green_porphyry": 		{"model" : "rockhounding_rocks:slabsD_green_porphyry"},
+		"type=green_jasper": 		{"model" : "rockhounding_rocks:slabsD_green_jasper"},
+		"type=bloodstone": 			{"model" : "rockhounding_rocks:slabsD_bloodstone"},
+		"type=jadeite": 			{"model" : "rockhounding_rocks:slabsD_jadeite"},
+		"type=malachite": 			{"model" : "rockhounding_rocks:slabsD_malachite"},
+		"type=serpentinite": 		{"model" : "rockhounding_rocks:slabsD_serpentinite"},
+		"type=zoisite": 			{"model" : "rockhounding_rocks:slabsD_zoisite"},
+		"type=green_tiger_eye": 	{"model" : "rockhounding_rocks:slabsD_green_tiger_eye"},
+		"type=green_tuff": 			{"model" : "rockhounding_rocks:slabsD_green_tuff"},
+		"type=unakite": 			{"model" : "rockhounding_rocks:slabsD_unakite"},
+		"type=chrysoprase": 		{"model" : "rockhounding_rocks:slabsD_chrysoprase"},
+		"type=rainforest_jasper": 	{"model" : "rockhounding_rocks:slabsD_rainforest_jasper"},
+		"type=glauconite": 			{"model" : "rockhounding_rocks:slabsD_glauconite"},
+		"type=dunite": 				{"model" : "rockhounding_rocks:slabsD_dunite"},
+		"type=rhodochrosite":		{"model" : "rockhounding_rocks:slabsD_rhodochrosite"},
+		"type=kakortokite": 		{"model" : "rockhounding_rocks:slabsD_kakortokite"}
+    }
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "rockhounding_rocks",
+  "name": "Rockhounding: Rocks",
+  "description": "A wide collection of decorative rocks with a reasonable realistic depiction. Building blocks and dedicated production technology included.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["GlobbyPotato"],
+  "credits": "The Forge and FML guys. MrCrayfish for the Model Creator.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

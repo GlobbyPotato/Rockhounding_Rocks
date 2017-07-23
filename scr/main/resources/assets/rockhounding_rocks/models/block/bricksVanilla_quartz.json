@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_bricks",
+    "textures": {
+        "particle": "minecraft:blocks/quartz_block_bottom",
+        "0": "minecraft:blocks/quartz_block_bottom",
+        "1": "rockhounding_rocks:blocks/overlay_brickb"
+    }
+}

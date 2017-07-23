@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=stone": 				{"model" : "rockhounding_rocks:tilesVanilla_stone"},
+		"type=cobblestone": 		{"model" : "rockhounding_rocks:tilesVanilla_cobblestone"},
+		"type=hardened_clay": 		{"model" : "rockhounding_rocks:tilesVanilla_hardened_clay"},
+		"type=brown_netherbrick": 	{"model" : "rockhounding_rocks:tilesVanilla_brown_netherbrick"},
+		"type=red_netherbrick": 	{"model" : "rockhounding_rocks:tilesVanilla_red_netherbrick"},
+		"type=sandstone": 			{"model" : "rockhounding_rocks:tilesVanilla_sandstone"},
+		"type=red_sandstone": 		{"model" : "rockhounding_rocks:tilesVanilla_red_sandstone"},
+		"type=bone_block": 			{"model" : "rockhounding_rocks:tilesVanilla_bone_block"},
+		"type=end_stone": 			{"model" : "rockhounding_rocks:tilesVanilla_end_stone"},
+		"type=granite": 			{"model" : "rockhounding_rocks:tilesVanilla_granite"},
+		"type=andesite": 			{"model" : "rockhounding_rocks:tilesVanilla_andesite"},
+		"type=diorite":	 			{"model" : "rockhounding_rocks:tilesVanilla_diorite"},
+		"type=prismarine": 				{"model" : "rockhounding_rocks:tilesVanilla_prismarine"},
+		"type=quartz": 				{"model" : "rockhounding_rocks:tilesVanilla_quartz"},
+		"type=nether_wart": 		{"model" : "rockhounding_rocks:tilesVanilla_nether_wart"},
+		"type=snow": 				{"model" : "rockhounding_rocks:tilesVanilla_snow"}
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_shorts",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/blocksC_migmatite",
+        "0": "rockhounding_rocks:blocks/blocksC_migmatite",
+        "1": "rockhounding_rocks:blocks/overlay_short"
+    }
+}

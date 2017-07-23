@@ -1,0 +1,32 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "block/cube_all",
+    "elements": [
+        {
+            "name": "rock",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        },
+        {
+            "name": "overlay",
+            "from": [ -0.01, -0.01, -0.01 ], 
+            "to": [ 16.01, 16.01, 16.01 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0.0, 0.0, 16.02, 16.02 ] },
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 16.02, 16.02 ] },
+                "south": { "texture": "#1", "uv": [ 0.0, 0.0, 16.02, 16.02 ] },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 16.02, 16.02 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.02, 16.02 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.02, 16.02 ] }
+            }
+        }
+    ]
+}

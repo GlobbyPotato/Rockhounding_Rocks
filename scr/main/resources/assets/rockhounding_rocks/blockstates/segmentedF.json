@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=red_onyx": 			{"model" : "rockhounding_rocks:segmentedF_red_onyx"},
+		"type=red_porphyry": 		{"model" : "rockhounding_rocks:segmentedF_red_porphyry"},
+		"type=red_jasper": 			{"model" : "rockhounding_rocks:segmentedF_red_jasper"},
+		"type=rose_red": 			{"model" : "rockhounding_rocks:segmentedF_rose_red"},
+		"type=sunstone": 			{"model" : "rockhounding_rocks:segmentedF_sunstone"},
+		"type=red_trachyte": 		{"model" : "rockhounding_rocks:segmentedF_red_trachyte"},
+		"type=noreena_jasper": 		{"model" : "rockhounding_rocks:segmentedF_noreena_jasper"},
+		"type=mookaite_jasper": 	{"model" : "rockhounding_rocks:segmentedF_mookaite_jasper"},
+		"type=red_tiger_eye": 		{"model" : "rockhounding_rocks:segmentedF_red_tiger_eye"},
+		"type=jaspilite": 			{"model" : "rockhounding_rocks:segmentedF_jaspilite"},
+ 		"type=alabaster":			{"model" : "rockhounding_rocks:segmentedF_alabaster"},
+		"type=chalk": 				{"model" : "rockhounding_rocks:segmentedF_chalk"},
+		"type=white_granite": 		{"model" : "rockhounding_rocks:segmentedF_white_granite"},
+		"type=white_onyx": 			{"model" : "rockhounding_rocks:segmentedF_white_onyx"},
+		"type=moonstone": 			{"model" : "rockhounding_rocks:segmentedF_moonstone"},
+		"type=porcelain_jasper": 	{"model" : "rockhounding_rocks:segmentedF_porcelain_jasper"}
+   }
+}
