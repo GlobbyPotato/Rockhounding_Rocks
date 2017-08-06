@@ -1,10 +1,5 @@
 package com.globbypotato.rockhounding_rocks.machines.gui;
 
-import java.util.Arrays;
-import java.util.List;
-
-import com.globbypotato.rockhounding_core.utils.RenderUtils;
-import com.globbypotato.rockhounding_core.utils.Translator;
 import com.globbypotato.rockhounding_rocks.handler.Reference;
 import com.globbypotato.rockhounding_rocks.machines.container.ContainerCuttingStation;
 import com.globbypotato.rockhounding_rocks.machines.tileentity.TileEntityCuttingStation;
@@ -12,7 +7,7 @@ import com.globbypotato.rockhounding_rocks.utils.ToolUtils;
 
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidTank;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -23,6 +18,7 @@ public class GuiCuttingStation extends GuiBase {
 	public static final int WIDTH = 176;
 	public static final int HEIGHT = 232;
 	public static final ResourceLocation TEXTURE_REF =  new ResourceLocation(Reference.MODID + ":textures/gui/guicuttingstation.png");
+	private FluidTank inputTank;
 
 	public GuiCuttingStation(InventoryPlayer playerInv, TileEntityCuttingStation tile){
 		super(tile,new ContainerCuttingStation(playerInv, tile));
@@ -31,6 +27,8 @@ public class GuiCuttingStation extends GuiBase {
 		this.cuttingStation = tile;
 		this.xSize = WIDTH;
 		this.ySize = HEIGHT;
+		this.inputTank = this.cuttingStation.inputTank;
+		this.containerName = "container.cuttingStation";
 	}
 
 	@Override
@@ -41,49 +39,32 @@ public class GuiCuttingStation extends GuiBase {
 		
 		//fuel
 		if(mouseX >= 10+x && mouseX <= 21+x && mouseY >= 36+y && mouseY <= 87+y){
-			String[] text = {this.cuttingStation.getPower() + "/" + this.cuttingStation.getPowerMax() + " ticks"};
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			drawPowerInfo("ticks", this.cuttingStation.getPower(), this.cuttingStation.getPowerMax(), mouseX, mouseY);
 		}
 
 		//input tank
 		if(mouseX>= 148+x && mouseX <= 167+x && mouseY >= 37+y && mouseY <= 101+y){
-			int fluidAmount = 0;
-			if(cuttingStation.inputTank.getFluid() != null){
-				fluidAmount = this.cuttingStation.inputTank.getFluidAmount();
-			}
-			String[] text = {fluidAmount + "/" + this.cuttingStation.inputTank.getCapacity() + " mb "};
-			if(cuttingStation.inputTank.getFluid() != null) text[0] += cuttingStation.inputTank.getFluid().getLocalizedName();
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			drawTankInfo(this.inputTank, mouseX, mouseY);
 		}
 
+		//custom cut
 		if(mouseX >= 8+x && mouseX <= 24+x && mouseY >= 92+y && mouseY <= 108+y){
-			String[] text = {"0: " + ToolUtils.cutNames[0]};
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			String text = "0: " + ToolUtils.cutNames[0];
+			drawButtonLabel(text, mouseX, mouseY);
 		}
 		
+		//cut list
 		for (int row = 0; row < 2; row++){
 			for (int col = 0; col < 9; col++){
 				int colOff = col * 18;
 				int rowOff = row * 18;
 				if(mouseX >= 7+colOff+x && mouseX <= 25+colOff+x && mouseY >= 109+rowOff+y && mouseY <= 127+rowOff+y){
 					int cutCode = (col + (row * 9)) + 1;
-					String[] text = {cutCode + ": " + ToolUtils.cutNames[cutCode]};
-					List<String> tooltip = Arrays.asList(text);
-					drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+					String text = cutCode + ": " + ToolUtils.cutNames[cutCode];
+					drawButtonLabel(text, mouseX, mouseY);
 				}
 			}
 		}
-	}
-
-	 @Override
-	public void drawGuiContainerForegroundLayer(int mouseX, int mouseY){
-		super.drawGuiContainerForegroundLayer(mouseX, mouseY);
-
-		String device = Translator.translateToLocal("container.cuttingStation");
-		this.fontRendererObj.drawString(device, this.xSize / 2 - this.fontRendererObj.getStringWidth(device) / 2, 4, 4210752);
 	}
 
 	@Override
@@ -134,13 +115,8 @@ public class GuiCuttingStation extends GuiBase {
 		}
 
 		//input fluid
-		if(cuttingStation.inputTank.getFluid() != null){
-			FluidStack temp = cuttingStation.inputTank.getFluid();
-			int capacity = cuttingStation.inputTank.getCapacity();
-			if(temp.amount > 5){
-				RenderUtils.bindBlockTexture();
-				RenderUtils.renderGuiTank(temp,capacity, temp.amount, i + 148, j + 37, zLevel, 20, 65);
-			}
+		if(this.inputTank.getFluid() != null){
+			renderFluidBar(this.inputTank.getFluid(), this.inputTank.getCapacity(), i + 147, j + 37, 20, 65);
 		}
 	}
 }

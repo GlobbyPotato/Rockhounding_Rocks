@@ -45,7 +45,9 @@ public class RocksGenerator implements IWorldGenerator {
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		if(world.provider.getDimension() == 0) {
 			if(!isFlat(world)){
-				generateOverworld(world, random, new BlockPos(chunkX * 16, 64, chunkZ * 16));
+				if(GENERAL_ENABLER){
+					generateOverworld(world, random, new BlockPos(chunkX * 16, 64, chunkZ * 16));
+				}
 			}
 		}else{
 			for(int X = 0; X < ModConfig.dimensions.length; X++ ){

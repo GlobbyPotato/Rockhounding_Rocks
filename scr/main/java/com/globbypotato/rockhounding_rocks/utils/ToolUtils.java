@@ -23,10 +23,10 @@ public class ToolUtils {
 													"Tetraphylon",
 													"Pedestal",
 													"Segmented Column",
+													"Segmented Post",
+													"Stele",
 													"Fountain",
-													"Lantern",
-													"Unused",
-													"Unused"};
+													"Lantern"};
 
 	public static ItemStack[] vanillaPlain = new ItemStack[]{
 													new ItemStack(Blocks.STONE),

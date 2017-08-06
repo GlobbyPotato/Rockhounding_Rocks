@@ -1,3 +1,22 @@
+v1.07 changelog
+	World generation
+		Tweaked the general enabler function. Can exclude overworld while keeping additional dimensions
+	Rocks Vending System
+		Fixed broken Rock Finder inscriber
+	Misc fixes
+		Added Segmented Posts and Steles 
+		Some texture allocation errors 
+		Code cleaning
+
+v1.06 changelog
+	Rockhounding core updated to v1.02
+	[Request] Added a Fuel Blend option inspired by ATM:Expert, configurable from the Core config 
+	Minor fixes, cleaning and maintenance
+
+v1.05 changelog
+	Minor tweaks
+	Sync to latest Core
+
 1.04 changelog
 	Cutting Station
 		Lava can be piped in as fuel and lava buckets used on it

@@ -36,6 +36,15 @@ import com.globbypotato.rockhounding_rocks.blocks.pillars.DoricsE;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.DoricsF;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.DoricsG;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.DoricsVanilla;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyA;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyB;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyC;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyClay;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyD;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyE;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyF;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyG;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.FancyVanilla;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.PostsA;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.PostsB;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.PostsC;
@@ -45,6 +54,15 @@ import com.globbypotato.rockhounding_rocks.blocks.pillars.PostsE;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.PostsF;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.PostsG;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.PostsVanilla;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleA;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleB;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleC;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleClay;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleD;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleE;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleF;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleG;
+import com.globbypotato.rockhounding_rocks.blocks.pillars.SteleVanilla;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.TetrasA;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.TetrasB;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.TetrasC;
@@ -231,6 +249,24 @@ public class ModBlocks {
 	public static Block doricsE;
 	public static Block doricsF;
 	public static Block doricsG;
+	public static Block fancysClay;
+	public static Block fancysVanilla;
+	public static Block fancysA;
+	public static Block fancysB;
+	public static Block fancysC;
+	public static Block fancysD;
+	public static Block fancysE;
+	public static Block fancysF;
+	public static Block fancysG;
+	public static Block stelesClay;
+	public static Block stelesVanilla;
+	public static Block stelesA;
+	public static Block stelesB;
+	public static Block stelesC;
+	public static Block stelesD;
+	public static Block stelesE;
+	public static Block stelesF;
+	public static Block stelesG;
 	public static Block lanternsClay;
 	public static Block lanternsVanilla;
 	public static Block lanternsA;
@@ -415,6 +451,30 @@ public class ModBlocks {
 			segmentedE = new DecoE(EnumRocksE.getNames(), "segmentedE", false);
 			segmentedF = new DecoF(EnumRocksF.getNames(), "segmentedF", false);
 			segmentedG = new DecoG(EnumRocksG.getNames(), "segmentedG", false);
+		}
+
+		if(ModConfig.ENABLE_FANCY){
+			fancysVanilla = new FancyVanilla(EnumVanilla.getNames(), "fancysVanilla", false);
+			fancysClay = new FancyClay(EnumClay.getNames(), "fancysClay", false);
+			fancysA = new FancyA(EnumRocksA.getNames(), "fancysA", false);
+			fancysB = new FancyB(EnumRocksB.getNames(), "fancysB", false);
+			fancysC = new FancyC(EnumRocksC.getNames(), "fancysC", false);
+			fancysD = new FancyD(EnumRocksD.getNames(), "fancysD", false);
+			fancysE = new FancyE(EnumRocksE.getNames(), "fancysE", false);
+			fancysF = new FancyF(EnumRocksF.getNames(), "fancysF", false);
+			fancysG = new FancyG(EnumRocksG.getNames(), "fancysG", false);
+		}
+
+		if(ModConfig.ENABLE_STELE){
+			stelesVanilla = new SteleVanilla(EnumVanilla.getNames(), "stelesVanilla", false);
+			stelesClay = new SteleClay(EnumClay.getNames(), "stelesClay", false);
+			stelesA = new SteleA(EnumRocksA.getNames(), "stelesA", false);
+			stelesB = new SteleB(EnumRocksB.getNames(), "stelesB", false);
+			stelesC = new SteleC(EnumRocksC.getNames(), "stelesC", false);
+			stelesD = new SteleD(EnumRocksD.getNames(), "stelesD", false);
+			stelesE = new SteleE(EnumRocksE.getNames(), "stelesE", false);
+			stelesF = new SteleF(EnumRocksF.getNames(), "stelesF", false);
+			stelesG = new SteleG(EnumRocksG.getNames(), "stelesG", false);
 		}
 
 		if(ModConfig.ENABLE_FOUNTAINS){
@@ -617,6 +677,30 @@ public class ModBlocks {
 				registerMetaBlockRender(segmentedE, i, EnumRocksE.getName(i));
 				registerMetaBlockRender(segmentedF, i, EnumRocksF.getName(i));
 				registerMetaBlockRender(segmentedG, i, EnumRocksG.getName(i));
+			}
+
+			if(ModConfig.ENABLE_FANCY){
+				registerMetaBlockRender(fancysVanilla, i, EnumVanilla.getName(i));
+				registerMetaBlockRender(fancysClay, i, EnumClay.getName(i));
+				registerMetaBlockRender(fancysA, i, EnumRocksA.getName(i));
+				registerMetaBlockRender(fancysB, i, EnumRocksB.getName(i));
+				registerMetaBlockRender(fancysC, i, EnumRocksC.getName(i));
+				registerMetaBlockRender(fancysD, i, EnumRocksD.getName(i));
+				registerMetaBlockRender(fancysE, i, EnumRocksE.getName(i));
+				registerMetaBlockRender(fancysF, i, EnumRocksF.getName(i));
+				registerMetaBlockRender(fancysG, i, EnumRocksG.getName(i));
+			}
+
+			if(ModConfig.ENABLE_STELE){
+				registerMetaBlockRender(stelesVanilla, i, EnumVanilla.getName(i));
+				registerMetaBlockRender(stelesClay, i, EnumClay.getName(i));
+				registerMetaBlockRender(stelesA, i, EnumRocksA.getName(i));
+				registerMetaBlockRender(stelesB, i, EnumRocksB.getName(i));
+				registerMetaBlockRender(stelesC, i, EnumRocksC.getName(i));
+				registerMetaBlockRender(stelesD, i, EnumRocksD.getName(i));
+				registerMetaBlockRender(stelesE, i, EnumRocksE.getName(i));
+				registerMetaBlockRender(stelesF, i, EnumRocksF.getName(i));
+				registerMetaBlockRender(stelesG, i, EnumRocksG.getName(i));
 			}
 
 			if(ModConfig.ENABLE_FOUNTAINS){

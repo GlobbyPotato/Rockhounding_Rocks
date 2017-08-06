@@ -30,10 +30,8 @@ public class CommonProxy {
 		ModBlocks.init();
 		ModItems.init();
 
-		// Register Spawning 
-		if(RocksGenerator.GENERAL_ENABLER){
-			GameRegistry.registerWorldGenerator(new RocksGenerator(), 1);
-		}
+		// Register WorldGen 
+		GameRegistry.registerWorldGenerator(new RocksGenerator(), 1);
 	}
 
 	public void init(FMLInitializationEvent e){

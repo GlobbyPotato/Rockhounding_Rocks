@@ -1,9 +1,5 @@
 package com.globbypotato.rockhounding_rocks.machines.gui;
 
-import java.util.Arrays;
-import java.util.List;
-
-import com.globbypotato.rockhounding_core.utils.Translator;
 import com.globbypotato.rockhounding_rocks.handler.Reference;
 import com.globbypotato.rockhounding_rocks.machines.container.ContainerRockVendor;
 import com.globbypotato.rockhounding_rocks.machines.tileentity.TileEntityRockVendor;
@@ -29,6 +25,7 @@ public class GuiRockVendor extends GuiBase {
 		this.rockVendor = tile;
 		this.xSize = WIDTH;
 		this.ySize = HEIGHT;
+		this.containerName = "container.rockVendor";
 	}
 
 	@Override
@@ -39,59 +36,45 @@ public class GuiRockVendor extends GuiBase {
 
 		//prev color
 		if(mouseX >= 11+x && mouseX <= 24+x && mouseY >= 19+y && mouseY <= 32+y){
-			String[] text = {"Previous Color"};
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			drawButtonLabel("Previous Color", mouseX, mouseY);
 		}
+
 		//next color
 		if(mouseX >= 49+x && mouseX <= 62+x && mouseY >= 19+y && mouseY <= 32+y){
-			String[] text = {"Next Color"};
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			drawButtonLabel("Next Color", mouseX, mouseY);
 		}
+
 		//color caption
 		if(mouseX >= 28+x && mouseX <= 45+x && mouseY >= 20+y && mouseY <= 32+y){
+			String text = "No color selected";
 			if(this.rockVendor.isValidColor()){
-				String[] text = {this.rockVendor.getColorName() + " rocks"};
-				List<String> tooltip = Arrays.asList(text);
-				drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
-			}else{
-				String[] text = {"No color selected"};
-				List<String> tooltip = Arrays.asList(text);
-				drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+				text = this.rockVendor.getColorName() + " rocks";
+				drawButtonLabel(text, mouseX, mouseY);
 			}
 		}
+
 		//prev rock
 		if(mouseX >= 11+x && mouseX <= 24+x && mouseY >= 45+y && mouseY <= 58+y){
-			String[] text = {"Previous Rock"};
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			drawButtonLabel("Previous Rock", mouseX, mouseY);
 		}
+
 		//next rock
 		if(mouseX >= 127+x && mouseX <= 140+x && mouseY >= 45+y && mouseY <= 58+y){
-			String[] text = {"Next Rock"};
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			drawButtonLabel("Next Rock", mouseX, mouseY);
 		}
+
 		//buy
 		if(mouseX >= 131+x && mouseX <= 144+x && mouseY >= 19+y && mouseY <= 32+y){
-			String[] text = {"Purchase Rocks"};
-			List<String> tooltip = Arrays.asList(text);
-			drawHoveringText(tooltip, mouseX, mouseY, fontRendererObj);
+			drawButtonLabel("Purchase Rock", mouseX, mouseY);
 		}
 	}
 
 	 @Override
 	public void drawGuiContainerForegroundLayer(int mouseX, int mouseY){
 		super.drawGuiContainerForegroundLayer(mouseX, mouseY);
-
-		String device = Translator.translateToLocal("container.rockVendor");
-		this.fontRendererObj.drawString(device, this.xSize / 2 - this.fontRendererObj.getStringWidth(device) / 2, 4, 4210752);
-		String recipeLabel = "";
+		String recipeLabel = "No Rocks available";
 		if(this.rockVendor.isRockSelected()){
 			recipeLabel = this.rockVendor.filteredRocks.get(this.rockVendor.rockScan).getDisplayName();
-		}else{
-			recipeLabel = "No Rocks available";
 		}
 		this.fontRendererObj.drawString(recipeLabel, 29, 48, 4210752);
 
@@ -100,7 +83,6 @@ public class GuiRockVendor extends GuiBase {
 		if(!RocksGenerator.BIOMES_ENABLER){
 			this.fontRendererObj.drawString("Biome Filter is Disabled!", 19, 75, 10040115);
 		}
-
 	}
 
 	@Override

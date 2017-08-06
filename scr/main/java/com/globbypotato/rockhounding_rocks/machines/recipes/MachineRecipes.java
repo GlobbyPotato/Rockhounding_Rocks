@@ -29,7 +29,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.rocksE, 1, x), 	1, 	new ItemStack(ModBlocks.blocksE, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.rocksF, 1, x), 	1, 	new ItemStack(ModBlocks.blocksF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.rocksG, 1, x), 	1, 	new ItemStack(ModBlocks.blocksG, 1, x)));
-	
+
 			if(ModConfig.ENABLE_POLISHED){
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksA, 1, x), 	2, 	new ItemStack(ModBlocks.polishedA, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksB, 1, x), 	2, 	new ItemStack(ModBlocks.polishedB, 1, x)));
@@ -39,7 +39,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	2, 	new ItemStack(ModBlocks.polishedF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	2, 	new ItemStack(ModBlocks.polishedG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_BRICKS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				4, 	new ItemStack(ModBlocks.bricksVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	4, 	new ItemStack(ModBlocks.bricksClay, 1, x)));
@@ -51,7 +51,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	4, 	new ItemStack(ModBlocks.bricksF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	4, 	new ItemStack(ModBlocks.bricksG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_SLABS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				3, 	new ItemStack(ModBlocks.slabsVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	3, 	new ItemStack(ModBlocks.slabsClay, 1, x)));
@@ -63,7 +63,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	3, 	new ItemStack(ModBlocks.slabsF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	3, 	new ItemStack(ModBlocks.slabsG, 1, x)));
 			}			
-	
+
 			if(ModConfig.ENABLE_SLABS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				5, 	new ItemStack(ModBlocks.shortsVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	5, 	new ItemStack(ModBlocks.shortsClay, 1, x)));
@@ -75,7 +75,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	5, 	new ItemStack(ModBlocks.shortsF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	5, 	new ItemStack(ModBlocks.shortsG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_DEBOSSED){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				6, 	new ItemStack(ModBlocks.debossVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	6, 	new ItemStack(ModBlocks.debossClay, 1, x)));
@@ -87,7 +87,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	6, 	new ItemStack(ModBlocks.debossF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	6, 	new ItemStack(ModBlocks.debossG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_FLOORS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				7, 	new ItemStack(ModBlocks.floorsVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	7, 	new ItemStack(ModBlocks.floorsClay, 1, x)));
@@ -99,7 +99,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	7, 	new ItemStack(ModBlocks.floorsF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	7, 	new ItemStack(ModBlocks.floorsG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_TILES){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				8, 	new ItemStack(ModBlocks.tilesVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	8, 	new ItemStack(ModBlocks.tilesClay, 1, x)));
@@ -111,7 +111,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	8, 	new ItemStack(ModBlocks.tilesF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	8, 	new ItemStack(ModBlocks.tilesG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_CARVED){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				9, 	new ItemStack(ModBlocks.carvedVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	9, 	new ItemStack(ModBlocks.carvedClay, 1, x)));
@@ -123,7 +123,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	9, 	new ItemStack(ModBlocks.carvedF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	9, 	new ItemStack(ModBlocks.carvedG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_COLUMNS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				10, new ItemStack(ModBlocks.columnsVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	10, new ItemStack(ModBlocks.columnsClay, 1, x)));
@@ -135,7 +135,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	10,	new ItemStack(ModBlocks.columnsF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	10,	new ItemStack(ModBlocks.columnsG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_DORICS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				11, new ItemStack(ModBlocks.doricsVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	11,	new ItemStack(ModBlocks.doricsClay, 1, x)));
@@ -147,7 +147,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	11, new ItemStack(ModBlocks.doricsF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	11, new ItemStack(ModBlocks.doricsG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_TETRAS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				12, new ItemStack(ModBlocks.tetrasVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	12, new ItemStack(ModBlocks.tetrasClay, 1, x)));
@@ -159,7 +159,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	12, new ItemStack(ModBlocks.tetrasF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	12, new ItemStack(ModBlocks.tetrasG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_POSTS){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				13, new ItemStack(ModBlocks.postsVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	13,	new ItemStack(ModBlocks.postsClay, 1, x)));
@@ -171,7 +171,7 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	13, new ItemStack(ModBlocks.postsF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	13, new ItemStack(ModBlocks.postsG, 1, x)));
 			}
-	
+
 			if(ModConfig.ENABLE_SEGMENTED){
 				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				14, new ItemStack(ModBlocks.segmentedVanilla, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	14, new ItemStack(ModBlocks.segmentedClay, 1, x)));
@@ -183,29 +183,53 @@ public class MachineRecipes extends BaseRecipes{
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	14, new ItemStack(ModBlocks.segmentedF, 1, x)));
 				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	14, new ItemStack(ModBlocks.segmentedG, 1, x)));
 			}
-	
-			if(ModConfig.ENABLE_FOUNTAINS){
-				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				15, new ItemStack(ModBlocks.fountainsVanilla, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	15, new ItemStack(ModBlocks.fountainsClay, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksA, 1, x), 	15, new ItemStack(ModBlocks.fountainsA, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksB, 1, x), 	15, new ItemStack(ModBlocks.fountainsB, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksC, 1, x), 	15, new ItemStack(ModBlocks.fountainsC, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksD, 1, x), 	15, new ItemStack(ModBlocks.fountainsD, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksE, 1, x), 	15, new ItemStack(ModBlocks.fountainsE, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	15, new ItemStack(ModBlocks.fountainsF, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	15, new ItemStack(ModBlocks.fountainsG, 1, x)));
+
+			if(ModConfig.ENABLE_FANCY){
+				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				15, new ItemStack(ModBlocks.fancysVanilla, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	15, new ItemStack(ModBlocks.fancysClay, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksA, 1, x), 	15, new ItemStack(ModBlocks.fancysA, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksB, 1, x), 	15, new ItemStack(ModBlocks.fancysB, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksC, 1, x), 	15, new ItemStack(ModBlocks.fancysC, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksD, 1, x), 	15, new ItemStack(ModBlocks.fancysD, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksE, 1, x), 	15, new ItemStack(ModBlocks.fancysE, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	15, new ItemStack(ModBlocks.fancysF, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	15, new ItemStack(ModBlocks.fancysG, 1, x)));
 			}
-	
+
+			if(ModConfig.ENABLE_STELE){
+				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				16, new ItemStack(ModBlocks.stelesVanilla, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	16, new ItemStack(ModBlocks.stelesClay, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksA, 1, x), 	16, new ItemStack(ModBlocks.stelesA, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksB, 1, x), 	16, new ItemStack(ModBlocks.stelesB, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksC, 1, x), 	16, new ItemStack(ModBlocks.stelesC, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksD, 1, x), 	16, new ItemStack(ModBlocks.stelesD, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksE, 1, x), 	16, new ItemStack(ModBlocks.stelesE, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	16, new ItemStack(ModBlocks.stelesF, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	16, new ItemStack(ModBlocks.stelesG, 1, x)));
+			}
+
+			if(ModConfig.ENABLE_FOUNTAINS){
+				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				17, new ItemStack(ModBlocks.fountainsVanilla, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	17, new ItemStack(ModBlocks.fountainsClay, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksA, 1, x), 	17, new ItemStack(ModBlocks.fountainsA, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksB, 1, x), 	17, new ItemStack(ModBlocks.fountainsB, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksC, 1, x), 	17, new ItemStack(ModBlocks.fountainsC, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksD, 1, x), 	17, new ItemStack(ModBlocks.fountainsD, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksE, 1, x), 	17, new ItemStack(ModBlocks.fountainsE, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	17, new ItemStack(ModBlocks.fountainsF, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	17, new ItemStack(ModBlocks.fountainsG, 1, x)));
+			}
+
 			if(ModConfig.ENABLE_LANTERNS){
-				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				16, new ItemStack(ModBlocks.lanternsVanilla, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	16, new ItemStack(ModBlocks.lanternsClay, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksA, 1, x), 	16, new ItemStack(ModBlocks.lanternsA, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksB, 1, x), 	16, new ItemStack(ModBlocks.lanternsB, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksC, 1, x), 	16, new ItemStack(ModBlocks.lanternsC, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksD, 1, x), 	16, new ItemStack(ModBlocks.lanternsD, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksE, 1, x), 	16, new ItemStack(ModBlocks.lanternsE, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	16, new ItemStack(ModBlocks.lanternsF, 1, x)));
-				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	16, new ItemStack(ModBlocks.lanternsG, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(ToolUtils.vanillaPlain[x], 				18, new ItemStack(ModBlocks.lanternsVanilla, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15-x), 	18, new ItemStack(ModBlocks.lanternsClay, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksA, 1, x), 	18, new ItemStack(ModBlocks.lanternsA, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksB, 1, x), 	18, new ItemStack(ModBlocks.lanternsB, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksC, 1, x), 	18, new ItemStack(ModBlocks.lanternsC, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksD, 1, x), 	18, new ItemStack(ModBlocks.lanternsD, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksE, 1, x), 	18, new ItemStack(ModBlocks.lanternsE, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksF, 1, x), 	18, new ItemStack(ModBlocks.lanternsF, 1, x)));
+				cuttingRecipes.add(new CuttingStationRecipes(new ItemStack(ModBlocks.blocksG, 1, x), 	18, new ItemStack(ModBlocks.lanternsG, 1, x)));
 			}
 		}
 	}

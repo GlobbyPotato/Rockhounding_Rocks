@@ -24,6 +24,8 @@ public class ModConfig {
 	public static boolean ENABLE_TETRAS;
 	public static boolean ENABLE_POSTS;
 	public static boolean ENABLE_SEGMENTED;
+	public static boolean ENABLE_FANCY;
+	public static boolean ENABLE_STELE;
 	public static boolean ENABLE_FOUNTAINS;
 	public static boolean ENABLE_LANTERNS;
 
@@ -33,7 +35,7 @@ public class ModConfig {
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		config.load();
 
-		RocksGenerator.GENERAL_ENABLER = config.get(		"Absolute", 			"Generate Rocks", 		true,	"Wether to generate the rocks or not").getBoolean();
+		RocksGenerator.GENERAL_ENABLER = config.get(		"Absolute", 			"Generate Rocks", 		true,	"Wether to generate the rocks. Overworld only.").getBoolean();
 		RocksGenerator.CLOUDS_ENABLER = config.get(			"Absolute", 			"Clouds Enabler", 		true,	"Wether to use clouds or patches generation").getBoolean();
 		RocksGenerator.BIOMES_ENABLER = config.get(			"Absolute", 			"Biome Filter Enabler", true,	"Wether to filter rocks by biome or randomly generate").getBoolean();
 		RocksGenerator.CLOUDS_FREQUENCY = config.get(		"Absolute", 			"Clouds Frequency",		1,	 	"Possible clouds per chunk", 1, 10).getInt();
@@ -60,6 +62,8 @@ public class ModConfig {
 		ENABLE_TETRAS = config.get(							"Absolute_parts",		"Tetrapylons", 			true,	"Enable/Disable this block").getBoolean();
 		ENABLE_POSTS = config.get(							"Absolute_parts",		"Pedestals", 			true,	"Enable/Disable this block").getBoolean();
 		ENABLE_SEGMENTED = config.get(						"Absolute_parts",		"Segmented Columns",	true,	"Enable/Disable this block").getBoolean();
+		ENABLE_FANCY = config.get(							"Absolute_parts",		"Fancy Columns", 		true,	"Enable/Disable this block").getBoolean();
+		ENABLE_STELE = config.get(							"Absolute_parts",		"Steles", 				true,	"Enable/Disable this block").getBoolean();
 		ENABLE_FOUNTAINS = config.get(						"Absolute_parts",		"Fountains", 			true,	"Enable/Disable this block").getBoolean();
 		ENABLE_LANTERNS = config.get(						"Absolute_parts",		"Lanterns", 			true,	"Enable/Disable this block").getBoolean();
 

@@ -3,6 +3,6 @@
     "parent": "rockhounding_rocks:block/base_posts_torso",
     "textures": {
         "particle": "minecraft:blocks/hardened_clay_stained_orange",
-        "0": "rockhounding_rocks:blocks/blocksA_slate"
+        "0": "minecraft:blocks/hardened_clay_stained_orange"
     }
 }

@@ -71,6 +71,7 @@ public class TileEntityRockVendor extends TileEntityMachineInv{
 	}
 
 
+
 	//---------------- HANDLER ----------------
 	public ItemStackHandler getTemplate(){
 		return this.template;
@@ -209,10 +210,11 @@ public class TileEntityRockVendor extends TileEntityMachineInv{
 
 	private void inscribeBook() {
 		ItemStack rockFinder = input.getStackInSlot(INSCRIBER_SLOT);
-		String rockName = template.getStackInSlot(PREVIEW_SLOT).getDisplayName();
-		rockFinder.getTagCompound().setString("Rock", rockName);
+		String unlocName = template.getStackInSlot(PREVIEW_SLOT).getUnlocalizedName().toLowerCase();
+		String displayName = template.getStackInSlot(PREVIEW_SLOT).getDisplayName();
+		rockFinder.getTagCompound().setString("Rock", displayName);
 		for(int x = 0; x < EnumRockList.size(); x++){
-			if(EnumRockList.getDysplayName(x).matches(rockName.toLowerCase())){
+			if(EnumRockList.getUnlocName(x).matches(unlocName)){
 				String rockLevel = "Y=" + RocksGenerator.ROCKS_MIN_VEIN[x] + " to Y=" + RocksGenerator.ROCKS_MAX_VEIN[x];
 				rockFinder.getTagCompound().setString("Level", rockLevel);
 
@@ -241,31 +243,25 @@ public class TileEntityRockVendor extends TileEntityMachineInv{
 		}
 	}
 
+	private ItemStack recipeOutput(){
+		ItemStack recipeoutput = template.getStackInSlot(PREVIEW_SLOT).copy();
+		recipeoutput.stackSize = this.getFeeAmount();
+		return template.getStackInSlot(PREVIEW_SLOT) != null ? recipeoutput : null;
+	}
+
 	public boolean canBuyRocks() {
 		return isRockSelected()
 			&& input.getStackInSlot(INPUT_SLOT) != null
 			&& this.getFeeAmount() > 0
 			&& template.getStackInSlot(PREVIEW_SLOT) != null
-			&& (output.getStackInSlot(OUTPUT_SLOT) == null || canStackOutput());
+			&& recipeOutput() != null
+			&& output.canSetOrStack(output.getStackInSlot(OUTPUT_SLOT), recipeOutput());
 	}
 
 	private void buyRocks() {
 		this.allowBuy = false;
-		if(output.getStackInSlot(OUTPUT_SLOT) == null){
-			output.setStackInSlot(OUTPUT_SLOT, template.getStackInSlot(PREVIEW_SLOT).copy());
-			output.getStackInSlot(OUTPUT_SLOT).stackSize = this.getFeeAmount();
-		}else{
-			if(canStackOutput()){
-				output.getStackInSlot(OUTPUT_SLOT).stackSize += this.getFeeAmount();
-			}
-		}
-		input.getStackInSlot(INPUT_SLOT).stackSize--;
-		if(input.getStackInSlot(INPUT_SLOT).stackSize <= 0){input.setStackInSlot(INPUT_SLOT, null);}
-	}
-
-	private boolean canStackOutput() {
-		return output.getStackInSlot(OUTPUT_SLOT) != null 
-			&& (output.getStackInSlot(OUTPUT_SLOT).isItemEqual(template.getStackInSlot(PREVIEW_SLOT)) && output.getStackInSlot(OUTPUT_SLOT).stackSize <= output.getStackInSlot(OUTPUT_SLOT).getMaxStackSize() - this.getFeeAmount());
+		output.setOrStack(OUTPUT_SLOT, recipeOutput());
+		input.decrementSlot(INPUT_SLOT);
 	}
 
 	private boolean wrongPreview() {

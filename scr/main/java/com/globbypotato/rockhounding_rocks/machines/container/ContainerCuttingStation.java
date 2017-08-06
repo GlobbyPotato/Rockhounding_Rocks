@@ -71,10 +71,8 @@ public class ContainerCuttingStation extends ContainerBase<TileEntityCuttingStat
 
 	@Override
 	public ItemStack slotClick(int slot, int dragType, ClickType clickTypeIn, EntityPlayer player){
-		if(slot >= 5 && slot <= 21){ //23 is the total
+		if(slot >= 5 && slot <= 23){ //23 is the total
 			this.tile.cutSelector = slot - 5;
-    		return null;
-		}else if(slot >= 22 && slot <= 23){ //to be removed when total is done
     		return null;
     	}else{
     		return super.slotClick(slot, dragType, clickTypeIn, player);
