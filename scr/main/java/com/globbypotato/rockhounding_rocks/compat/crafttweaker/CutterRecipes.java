@@ -1,4 +1,4 @@
-package com.globbypotato.rockhounding_rocks.integration.crafttweaker;
+package com.globbypotato.rockhounding_rocks.compat.crafttweaker;
 
 import com.globbypotato.rockhounding_rocks.compat.jei.cutting.CuttingRecipeWrapper;
 import com.globbypotato.rockhounding_rocks.machines.recipes.CuttingStationRecipes;
@@ -11,13 +11,13 @@ import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
 
 @ZenClass("mods.rockhounding_rocks.CuttingStation")
-public class CutterRecipes {
+public class CutterRecipes extends CTSupport{
 	private static String name = "Cutting Station Recipe";
 
     @ZenMethod
     public static void add(IItemStack input, int code, IItemStack output) {
         if(input == null || code < 0 || output == null) {MineTweakerAPI.logError(name + ": Invalid recipe."); return;}
-        MineTweakerAPI.apply(new AddToCutting(new CuttingStationRecipes(CTSupport.toStack(input), code, CTSupport.toStack(output))));
+        MineTweakerAPI.apply(new AddToCutting(new CuttingStationRecipes(toStack(input), code, toStack(output))));
     }
 
     private static class AddToCutting implements IUndoableAction {

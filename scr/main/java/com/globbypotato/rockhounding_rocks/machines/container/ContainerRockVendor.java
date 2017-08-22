@@ -5,18 +5,11 @@ import com.globbypotato.rockhounding_rocks.machines.tileentity.TileEntityRockVen
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
 public class ContainerRockVendor extends ContainerBase<TileEntityRockVendor> {
-	Slot cPrev;
-	Slot cNext;
-	Slot nPrev;
-	Slot nNext;
-	Slot view;
-	Slot buy;
 
 	public ContainerRockVendor(IInventory playerInventory, TileEntityRockVendor tile){
 		super(playerInventory,tile);
@@ -32,12 +25,12 @@ public class ContainerRockVendor extends ContainerBase<TileEntityRockVendor> {
 		this.addSlotToContainer(new SlotItemHandler(input, 1, 149, 70));//inscriber
 		this.addSlotToContainer(new SlotItemHandler(output, 0, 149, 18));//output
 
-		cPrev = this.addSlotToContainer(new SlotItemHandler(template, 0, 10,  18));//prev color
-		cNext = this.addSlotToContainer(new SlotItemHandler(template, 1, 48,  18));//next color 
-		nPrev = this.addSlotToContainer(new SlotItemHandler(template, 2, 10,  44));//prev name
-		nNext = this.addSlotToContainer(new SlotItemHandler(template, 3, 126,  44));//next name
-		buy = this.addSlotToContainer(new SlotItemHandler(template, 4, 130,  18));//buy
-		view = this.addSlotToContainer(new SlotItemHandler(template, 5, 149,  44));//preview
+		this.addSlotToContainer(new SlotItemHandler(template, 0, 10,  18));//prev color
+		this.addSlotToContainer(new SlotItemHandler(template, 1, 48,  18));//next color 
+		this.addSlotToContainer(new SlotItemHandler(template, 2, 10,  44));//prev name
+		this.addSlotToContainer(new SlotItemHandler(template, 3, 126,  44));//next name
+		this.addSlotToContainer(new SlotItemHandler(template, 4, 130,  18));//buy
+		this.addSlotToContainer(new SlotItemHandler(template, 5, 149,  44));//preview
 
 	}
 

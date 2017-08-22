@@ -1,4 +1,4 @@
-package com.globbypotato.rockhounding_rocks.integration.crafttweaker;
+package com.globbypotato.rockhounding_rocks.compat.crafttweaker;
 
 import minetweaker.MineTweakerAPI;
 import minetweaker.api.item.IItemStack;

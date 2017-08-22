@@ -2,11 +2,11 @@ package com.globbypotato.rockhounding_rocks.proxy;
 
 import com.globbypotato.rockhounding_rocks.ModBlocks;
 import com.globbypotato.rockhounding_rocks.ModItems;
+import com.globbypotato.rockhounding_rocks.compat.crafttweaker.CTSupport;
 import com.globbypotato.rockhounding_rocks.handler.GuiHandler;
 import com.globbypotato.rockhounding_rocks.handler.ModConfig;
 import com.globbypotato.rockhounding_rocks.handler.ModRecipes;
 import com.globbypotato.rockhounding_rocks.handler.Reference;
-import com.globbypotato.rockhounding_rocks.integration.crafttweaker.CTSupport;
 import com.globbypotato.rockhounding_rocks.machines.recipes.MachineRecipes;
 import com.globbypotato.rockhounding_rocks.utils.IMCUtils;
 import com.globbypotato.rockhounding_rocks.world.RocksGenerator;

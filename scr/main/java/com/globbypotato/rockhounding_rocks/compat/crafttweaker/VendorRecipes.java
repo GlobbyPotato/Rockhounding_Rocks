@@ -1,4 +1,4 @@
-package com.globbypotato.rockhounding_rocks.integration.crafttweaker;
+package com.globbypotato.rockhounding_rocks.compat.crafttweaker;
 
 import com.globbypotato.rockhounding_rocks.compat.jei.vendor.VendorRecipeWrapper;
 import com.globbypotato.rockhounding_rocks.machines.recipes.MachineRecipes;
@@ -12,13 +12,13 @@ import stanhebben.zenscript.annotations.ZenClass;
 import stanhebben.zenscript.annotations.ZenMethod;
 
 @ZenClass("mods.rockhounding_rocks.RockVendor")
-public class VendorRecipes {
+public class VendorRecipes extends CTSupport{
 	private static String name = "Rack Vending System Recipe";
 
     @ZenMethod
     public static void add(IItemStack input, boolean oredict, int quantity) {
         if(input == null || quantity <= 0) {MineTweakerAPI.logError(name + ": Invalid recipe."); return;}
-        MineTweakerAPI.apply(new AddToVendor(new RockVendorFees(CTSupport.toStack(input), oredict, quantity)));
+        MineTweakerAPI.apply(new AddToVendor(new RockVendorFees(toStack(input), oredict, quantity)));
     }
 
     private static class AddToVendor implements IUndoableAction {
@@ -55,7 +55,7 @@ public class VendorRecipes {
     @ZenMethod
     public static void remove(IItemStack input) {
         if(input == null) {MineTweakerAPI.logError(name + ": Invalid recipe."); return;}
-        MineTweakerAPI.apply(new RemoveFromVendor(CTSupport.toStack(input)));    
+        MineTweakerAPI.apply(new RemoveFromVendor(toStack(input)));    
     }
 		    private static class RemoveFromVendor implements IUndoableAction {
 		    	private ItemStack input;
