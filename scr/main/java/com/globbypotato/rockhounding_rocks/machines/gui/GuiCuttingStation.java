@@ -7,6 +7,7 @@ import com.globbypotato.rockhounding_rocks.utils.ToolUtils;
 
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fluids.FluidTank;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -40,6 +41,28 @@ public class GuiCuttingStation extends GuiBase {
 		//fuel
 		if(mouseX >= 10+x && mouseX <= 21+x && mouseY >= 36+y && mouseY <= 87+y){
 			drawPowerInfo("ticks", this.cuttingStation.getPower(), this.cuttingStation.getPowerMax(), mouseX, mouseY);
+		}
+
+		//fuel status
+		if(this.cuttingStation.getInput().getStackInSlot(this.cuttingStation.FUEL_SLOT) == null){
+			   	//fuel
+				String fuelString = TextFormatting.DARK_GRAY + "Fuel Type: " + TextFormatting.GOLD + "Common";
+				String indString = TextFormatting.DARK_GRAY + "Induction: " + TextFormatting.RED + "OFF";
+				String permaString = "";
+				if(this.cuttingStation.hasFuelBlend()){
+					fuelString = TextFormatting.DARK_GRAY + "Fuel Type: " + TextFormatting.GOLD + "Blend";
+				}
+				if(this.cuttingStation.canInduct()){
+					indString = TextFormatting.DARK_GRAY + "Induction: " + TextFormatting.RED + "ON";
+					permaString = TextFormatting.DARK_GRAY + "Status: " + TextFormatting.DARK_GREEN + "Mobile";
+					if(this.cuttingStation.hasPermanentInduction()){
+						permaString = TextFormatting.DARK_GRAY + "Status: " + TextFormatting.DARK_RED + "Permanent";
+					}
+				}
+				String multiString[] = new String[]{fuelString, "", indString, permaString};
+			if(mouseX >= 7+x && mouseX <= 24+x && mouseY >= 16+y && mouseY <= 34+y){
+				   drawMultiLabel(multiString, mouseX, mouseY);
+			}
 		}
 
 		//input tank

@@ -129,6 +129,7 @@ public class TileEntityCuttingStation extends TileEntityMachineTank{
 	//----------------------- PROCESS -----------------------
 	@Override
 	public void update(){
+		acceptEnergy();
 		fuelHandler(input.getStackInSlot(FUEL_SLOT));
 		lavaHandler();
 

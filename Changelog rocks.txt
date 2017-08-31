@@ -1,3 +1,12 @@
+v1.10 changelog
+	Minor tweaks
+	Core updated to v1.06
+
+v1.09 changelog
+	Fixed some integration issue
+	Various fixes
+	Core Updated to v1.05
+
 v1.08 changelog
 	Misc fixes
 		Code cleaning
