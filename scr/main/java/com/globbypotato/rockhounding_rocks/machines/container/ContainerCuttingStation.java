@@ -21,7 +21,7 @@ public class ContainerCuttingStation extends ContainerBase<TileEntityCuttingStat
 		IItemHandler template = tile.getTemplate();
 
 		this.addSlotToContainer(new SlotItemHandler(input, 0, 89, 29));//input
-		this.addSlotToContainer(new SlotItemHandler(input, 1, 8, 17));//fuel
+		this.addSlotToContainer(new SlotItemHandler(input, 1, 8, 8));//fuel
 		this.addSlotToContainer(new SlotItemHandler(input, 2, 63, 48));//consumable
 		this.addSlotToContainer(new SlotItemHandler(input, 3, 150, 17));//bucket
 		this.addSlotToContainer(new SlotItemHandler(output, 0, 89, 67));//output
@@ -52,6 +52,7 @@ public class ContainerCuttingStation extends ContainerBase<TileEntityCuttingStat
 	public ItemStack slotClick(int slot, int dragType, ClickType clickTypeIn, EntityPlayer player){
 		if(slot >= 5 && slot <= 23){ //23 is the total
 			this.tile.cutSelector = slot - 5;
+			doClickSound(player, tile.getWorld(), tile.getPos());
     		return null;
     	}else{
     		return super.slotClick(slot, dragType, clickTypeIn, player);

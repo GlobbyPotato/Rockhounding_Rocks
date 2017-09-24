@@ -3,6 +3,8 @@ package com.globbypotato.rockhounding_rocks.proxy;
 import com.globbypotato.rockhounding_rocks.ModBlocks;
 import com.globbypotato.rockhounding_rocks.ModItems;
 import com.globbypotato.rockhounding_rocks.compat.crafttweaker.CTSupport;
+import com.globbypotato.rockhounding_rocks.compat.top.TopCompat;
+import com.globbypotato.rockhounding_rocks.compat.waila.WailaCompat;
 import com.globbypotato.rockhounding_rocks.handler.GuiHandler;
 import com.globbypotato.rockhounding_rocks.handler.ModConfig;
 import com.globbypotato.rockhounding_rocks.handler.ModRecipes;
@@ -32,6 +34,10 @@ public class CommonProxy {
 
 		// Register WorldGen 
 		GameRegistry.registerWorldGenerator(new RocksGenerator(), 1);
+
+		// Waila compatilbility
+        WailaCompat.init();
+        TopCompat.init();
 	}
 
 	public void init(FMLInitializationEvent e){

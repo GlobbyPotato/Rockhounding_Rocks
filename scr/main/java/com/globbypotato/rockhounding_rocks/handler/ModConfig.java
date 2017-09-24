@@ -11,6 +11,8 @@ public class ModConfig {
 	public static int speedCuttingStation;
 	public static int bladeUses;
 
+	public static boolean enableTOP;
+
 	public static boolean ENABLE_POLISHED;
 	public static boolean ENABLE_BRICKS;
 	public static boolean ENABLE_SLABS;
@@ -44,6 +46,8 @@ public class ModConfig {
 		RocksGenerator.CLOUDS_MAX_SIZE = config.get(		"Absolute", 			"Clouds Max Size", 		48,		"Maximum cloud size").getInt();
 
 		dimensions = config.get(							"Absolute_dimensions",  "dimension whitelist", dimensions, "Additional allowed dimensions").getIntList();
+
+		enableTOP = config.get(								"Absolute_support",		"Support TheOneProbe", 	true,	"Mod support and integration parameters").getBoolean();
 
 		CAN_USE_FOUNTAINS = config.get(						"Absolute_misc",		"Fountains Water", 		true,	"Wether water in fountains can be used").getBoolean();
 		speedCuttingStation = config.get(					"Absolute_misc",		"Speed Cutting Station",200,	"Operation speed of the Cutting Station").getInt();

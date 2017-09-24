@@ -14,7 +14,6 @@ import mezz.jei.api.gui.IGuiItemStackGroup;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.IRecipeWrapper;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.FluidRegistry;
@@ -25,13 +24,12 @@ public class CuttingRecipeCategory extends RHRecipeCategory {
 	private static final int INPUT_SLOT = 0;
 	private static final int CONSUMABLE_SLOT = 1;
 	private static final int OUTPUT_SLOT = 2;
-	private static final int WATER_SLOT = 3;
-	private static final int WATER_TANK = 4;
+	private static final int WATER_TANK = 3;
 
-	private final static ResourceLocation guiTexture = GuiCuttingStation.TEXTURE_REF;
+	private final static ResourceLocation guiTexture = GuiCuttingStation.TEXTURE_JEI;
 
 	public CuttingRecipeCategory(IGuiHelper guiHelper) {
-		super(guiHelper.createDrawable(guiTexture, 7, 16, 162, 92), "jei.cutting.name");
+		super(guiHelper.createDrawable(guiTexture, 0, 0, 74, 67), "jei.cutting.name");
 	}
 
 	@Nonnull
@@ -46,16 +44,14 @@ public class CuttingRecipeCategory extends RHRecipeCategory {
 		IGuiFluidStackGroup guiFluidStacks = recipeLayout.getFluidStacks();
 		CuttingRecipeWrapper wrapper = (CuttingRecipeWrapper) recipeWrapper;
 
-		guiItemStacks.init(INPUT_SLOT, true, 81, 12);
-		guiItemStacks.init(CONSUMABLE_SLOT, true, 55, 31);
-		guiItemStacks.init(OUTPUT_SLOT, false, 81, 50);
-		guiItemStacks.init(WATER_SLOT, false, 142, 0);
-		guiFluidStacks.init(WATER_TANK, true,  141, 21, 20, 65, 100, false, null);
+		guiItemStacks.init(INPUT_SLOT, true, 26, 5);
+		guiItemStacks.init(CONSUMABLE_SLOT, true, 0, 24);
+		guiItemStacks.init(OUTPUT_SLOT, false, 26, 43);
+		guiFluidStacks.init(WATER_TANK, true,  53, 1, 20, 65, 100, false, null);
 
 		guiItemStacks.set(INPUT_SLOT, wrapper.getInputs());
 		guiItemStacks.set(CONSUMABLE_SLOT, new ItemStack(ModItems.cuttingBlade));
 		guiItemStacks.set(OUTPUT_SLOT, wrapper.getOutputs());
-		guiItemStacks.set(WATER_SLOT, new ItemStack(Items.WATER_BUCKET));
 		guiFluidStacks.set(WATER_TANK, new FluidStack(FluidRegistry.WATER, TileEntityCuttingStation.consumedWater));
 
 	}

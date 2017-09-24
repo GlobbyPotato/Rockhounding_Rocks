@@ -41,27 +41,32 @@ public class ContainerRockVendor extends ContainerBase<TileEntityRockVendor> {
 	    		this.tile.colorScan--; 
 	    		this.tile.reloadRocks = true;
 			}
+			doClickSound(player, tile.getWorld(), tile.getPos());
     		return null;
 		}else if(slot == 4){//next color
     		if(this.tile.colorScan < 15){
 	    		this.tile.colorScan++; 
 	    		this.tile.reloadRocks = true;
 			}
+			doClickSound(player, tile.getWorld(), tile.getPos());
     		return null;
 		}else if(slot == 5){//prev name
 			if(this.tile.rockScan >= 0){
 	    		this.tile.rockScan--; 
 			}
+			doClickSound(player, tile.getWorld(), tile.getPos());
     		return null;
     	}else if(slot == 6){//next name
     		if(this.tile.isValidColor() && this.tile.listMaxRocks()){
     			this.tile.rockScan++; 
     		}
+			doClickSound(player, tile.getWorld(), tile.getPos());
     		return null;
     	}else if(slot == 7){//buy
     		if(this.tile.canBuyRocks()){
     			this.tile.allowBuy = true;
     		}
+			doClickSound(player, tile.getWorld(), tile.getPos());
     		return null;
     	}else if(slot == 8){//preview
     		return null;

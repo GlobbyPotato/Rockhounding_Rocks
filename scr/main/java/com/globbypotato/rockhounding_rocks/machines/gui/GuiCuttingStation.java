@@ -7,7 +7,6 @@ import com.globbypotato.rockhounding_rocks.utils.ToolUtils;
 
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fluids.FluidTank;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -19,6 +18,7 @@ public class GuiCuttingStation extends GuiBase {
 	public static final int WIDTH = 176;
 	public static final int HEIGHT = 232;
 	public static final ResourceLocation TEXTURE_REF =  new ResourceLocation(Reference.MODID + ":textures/gui/guicuttingstation.png");
+	public static final ResourceLocation TEXTURE_JEI =  new ResourceLocation(Reference.MODID + ":textures/gui/guicuttingstationjei.png");
 	private FluidTank inputTank;
 
 	public GuiCuttingStation(InventoryPlayer playerInv, TileEntityCuttingStation tile){
@@ -39,30 +39,14 @@ public class GuiCuttingStation extends GuiBase {
 		int y = (this.height - this.ySize) / 2;
 		
 		//fuel
-		if(mouseX >= 10+x && mouseX <= 21+x && mouseY >= 36+y && mouseY <= 87+y){
-			drawPowerInfo("ticks", this.cuttingStation.getPower(), this.cuttingStation.getPowerMax(), mouseX, mouseY);
+		if(mouseX >= 10+x && mouseX <= 21+x && mouseY >= 27+y && mouseY <= 78+y){
+			drawPowerInfo("ticks", this.cuttingStation.getCookTimeMax(), this.cuttingStation.getPower(), this.cuttingStation.getPowerMax(), mouseX, mouseY);
 		}
 
 		//fuel status
-		if(this.cuttingStation.getInput().getStackInSlot(this.cuttingStation.FUEL_SLOT) == null){
-			   	//fuel
-				String fuelString = TextFormatting.DARK_GRAY + "Fuel Type: " + TextFormatting.GOLD + "Common";
-				String indString = TextFormatting.DARK_GRAY + "Induction: " + TextFormatting.RED + "OFF";
-				String permaString = "";
-				if(this.cuttingStation.hasFuelBlend()){
-					fuelString = TextFormatting.DARK_GRAY + "Fuel Type: " + TextFormatting.GOLD + "Blend";
-				}
-				if(this.cuttingStation.canInduct()){
-					indString = TextFormatting.DARK_GRAY + "Induction: " + TextFormatting.RED + "ON";
-					permaString = TextFormatting.DARK_GRAY + "Status: " + TextFormatting.DARK_GREEN + "Mobile";
-					if(this.cuttingStation.hasPermanentInduction()){
-						permaString = TextFormatting.DARK_GRAY + "Status: " + TextFormatting.DARK_RED + "Permanent";
-					}
-				}
-				String multiString[] = new String[]{fuelString, "", indString, permaString};
-			if(mouseX >= 7+x && mouseX <= 24+x && mouseY >= 16+y && mouseY <= 34+y){
-				   drawMultiLabel(multiString, mouseX, mouseY);
-			}
+		String[] fuelstatusString = handleFuelStatus(this.cuttingStation.isFuelGated(), this.cuttingStation.hasFuelBlend(), this.cuttingStation.canInduct(), this.cuttingStation.allowPermanentInduction());
+		if(mouseX >= 7+x && mouseX <= 24+x && mouseY >= 7+y && mouseY <= 24+y){
+			drawMultiLabel(fuelstatusString, mouseX, mouseY);
 		}
 
 		//input tank
@@ -88,6 +72,7 @@ public class GuiCuttingStation extends GuiBase {
 				}
 			}
 		}
+
 	}
 
 	@Override
@@ -97,10 +82,10 @@ public class GuiCuttingStation extends GuiBase {
 		int j = (this.height - this.ySize) / 2;
 		this.drawTexturedModalRect(i, j, 0, 0, this.xSize, this.ySize);
 
-        //power bar
+		//power bar
         if (this.cuttingStation.getPower() > 0){
             int k = this.getBarScaled(50, this.cuttingStation.getPower(), this.cuttingStation.getPowerMax());
-            this.drawTexturedModalRect(i + 11, j + 37 + (50 - k), 176, 17, 10, k);
+            this.drawTexturedModalRect(i + 11, j + 28 + (50 - k), 176, 17, 10, k);
         }
 
         //smelt bar
@@ -109,10 +94,10 @@ public class GuiCuttingStation extends GuiBase {
             this.drawTexturedModalRect(i + 82, j + 48, 176, 0, k, 17);
         }
 
-        //inductor
-        if(this.cuttingStation.hasPermanentInduction()){
-            this.drawTexturedModalRect(i + 7, j + 16, 176, 83, 18, 18);
-        }
+		//induction icons
+		if(this.cuttingStation.hasPermanentInduction()){
+			this.drawTexturedModalRect(i + 7, j + 7, 176, 154, 18, 18); //inductor
+		}
 
 		//cuts selection
 		switch(this.cuttingStation.cutSelector){
@@ -139,7 +124,7 @@ public class GuiCuttingStation extends GuiBase {
 
 		//input fluid
 		if(this.inputTank.getFluid() != null){
-			renderFluidBar(this.inputTank.getFluid(), this.inputTank.getCapacity(), i + 147, j + 37, 20, 65);
+			renderFluidBar(this.inputTank.getFluid(), this.inputTank.getCapacity(), i + 148, j + 37, 20, 65);
 		}
 	}
 }

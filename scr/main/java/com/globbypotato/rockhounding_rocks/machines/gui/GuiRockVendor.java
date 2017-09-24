@@ -65,8 +65,16 @@ public class GuiRockVendor extends GuiBase {
 
 		//buy
 		if(mouseX >= 131+x && mouseX <= 144+x && mouseY >= 19+y && mouseY <= 32+y){
-			drawButtonLabel("Purchase Rock", mouseX, mouseY);
+			drawButtonLabel("Click to purchase the rocks", mouseX, mouseY);
 		}
+
+		//finder
+		if(this.rockVendor.getInput().getStackInSlot(this.rockVendor.INSCRIBER_SLOT) == null){
+			if(mouseX >= 148+x && mouseX <= 165+x && mouseY >= 69+y && mouseY <= 86+y){
+				drawButtonLabel("Insert here a Rock Finder", mouseX, mouseY);
+			}
+		}
+
 	}
 
 	 @Override
