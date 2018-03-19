@@ -36,7 +36,7 @@ mods.rockhounding_rocks.StoneRammer.add(<minecraft:stone:1>, <minecraft:stone:2>
 //----------------------------------
 //Parameters = input, code, output
 //input = the block to be cut
-//code = the code for the type of cut
+//code = the code for the type of cut (based on the Carving Scheme metadata)
 //output = the output cut block
 mods.rockhounding_rocks.CarvingBench.add(<minecraft:stone:0>, 3, <minecraft:stonebrick:0>);
 
@@ -46,6 +46,6 @@ mods.rockhounding_rocks.CarvingBench.add(<minecraft:stone:0>, 3, <minecraft:ston
 //----------------------------------
 //Parameters = input, code, output
 //input = the block to be cut
-//code = the code for the type of cut
+//code = the code for the type of cut (based on the Sculpting Scheme metadata)
 //output = the output cut block
 mods.rockhounding_rocks.SculptingBench.add(<minecraft:quartz_block:0>, 1, <minecraft:quartz_block:2>);
