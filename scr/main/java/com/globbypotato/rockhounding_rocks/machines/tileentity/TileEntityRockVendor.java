@@ -51,10 +51,13 @@ public class TileEntityRockVendor extends TileEntityMachineInv{
 
 	public static Biome[] biomeList;
 
+	public static int totInput = 2;
+	public static int totOutput = 1;
+	
 	public TileEntityRockVendor() {
-		super(2, 1);
+		super(totInput, totOutput);
 
-		input =  new MachineStackHandler(INPUT_SLOTS, this){
+		input =  new MachineStackHandler(totInput, this){
 			@Override
 			public ItemStack insertItem(int slot, ItemStack insertingStack, boolean simulate){
 				if(slot == INPUT_SLOT && isComparableCurrency(insertingStack)){

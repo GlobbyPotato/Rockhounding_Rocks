@@ -33,8 +33,11 @@ public class TileEntityCuttingStation extends TileEntityMachineTank{
 	public int cutSelector;
 	public static int consumedWater = 50;
 
+	public static int totInput = 4;
+	public static int totOutput = 1;
+	
 	public TileEntityCuttingStation() {
-		super(4, 1, 1);
+		super(totInput, totOutput, 1);
 
 		inputTank = new FluidTank(Fluid.BUCKET_VOLUME * 10){
 			@Override
@@ -46,7 +49,7 @@ public class TileEntityCuttingStation extends TileEntityMachineTank{
 		inputTank.setCanFill(true);
 		inputTank.setCanDrain(false);
 
-		input =  new MachineStackHandler(INPUT_SLOTS, this){
+		input =  new MachineStackHandler(totInput, this){
 			@Override
 			public ItemStack insertItem(int slot, ItemStack insertingStack, boolean simulate){
 				if (slot == FUEL_SLOT && CoreUtils.isPowerSource(insertingStack)){
