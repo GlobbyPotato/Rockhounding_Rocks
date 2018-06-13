@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "rockhounding_rocks:blocks/rocksE_pink_travertine"
-    }
-}
