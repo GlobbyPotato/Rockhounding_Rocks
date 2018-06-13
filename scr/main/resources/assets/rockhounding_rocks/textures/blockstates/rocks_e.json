@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=pink_granite": 	{"model" : "rockhounding_rocks:rocks_e_pink_granite"},
+		"type=pink_onyx": 		{"model" : "rockhounding_rocks:rocks_e_pink_onyx"},
+		"type=pink_trachyte": 	{"model" : "rockhounding_rocks:rocks_e_pink_trachyte"},
+		"type=pink_porphyry": 	{"model" : "rockhounding_rocks:rocks_e_pink_porphyry"},
+		"type=pink_travertine": {"model" : "rockhounding_rocks:rocks_e_pink_travertine"},
+		"type=rhodonite": 		{"model" : "rockhounding_rocks:rocks_e_rhodonite"},
+		"type=charoite":		{"model" : "rockhounding_rocks:rocks_e_charoite"},
+		"type=jasperoid": 		{"model" : "rockhounding_rocks:rocks_e_jasperoid"},
+		"type=sugilite": 		{"model" : "rockhounding_rocks:rocks_e_sugilite"},
+		"type=stichtite": 		{"model" : "rockhounding_rocks:rocks_e_stichtite"},
+		"type=dumortierite":	{"model" : "rockhounding_rocks:rocks_e_dumortierite"},
+		"type=purple_porphyry": {"model" : "rockhounding_rocks:rocks_e_purple_porphyry"},
+		"type=aplite": 			{"model" : "rockhounding_rocks:rocks_e_aplite"},
+		"type=red_carnelian": 	{"model" : "rockhounding_rocks:rocks_e_red_carnelian"},
+		"type=red_aventurine": 	{"model" : "rockhounding_rocks:rocks_e_red_aventurine"},
+		"type=red_granite": 	{"model" : "rockhounding_rocks:rocks_e_red_granite"}
+    }
+}

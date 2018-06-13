@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=green_porphyry": 		{"model" : "rockhounding_rocks:half_deboss_d_lo_green_porphyry"},
+		"type=green_jasper": 		{"model" : "rockhounding_rocks:half_deboss_d_lo_green_jasper"},
+		"type=bloodstone": 			{"model" : "rockhounding_rocks:half_deboss_d_lo_bloodstone"},
+		"type=jadeite": 			{"model" : "rockhounding_rocks:half_deboss_d_lo_jadeite"},
+		"type=malachite": 			{"model" : "rockhounding_rocks:half_deboss_d_lo_malachite"},
+		"type=serpentinite": 		{"model" : "rockhounding_rocks:half_deboss_d_lo_serpentinite"},
+		"type=zoisite": 			{"model" : "rockhounding_rocks:half_deboss_d_lo_zoisite"},
+		"type=green_tiger_eye": 	{"model" : "rockhounding_rocks:half_deboss_d_lo_green_tiger_eye"},
+		"type=green_tuff": 			{"model" : "rockhounding_rocks:half_deboss_d_lo_green_tuff"},
+		"type=unakite": 			{"model" : "rockhounding_rocks:half_deboss_d_lo_unakite"},
+		"type=chrysoprase": 		{"model" : "rockhounding_rocks:half_deboss_d_lo_chrysoprase"},
+		"type=rainforest_jasper": 	{"model" : "rockhounding_rocks:half_deboss_d_lo_rainforest_jasper"},
+		"type=glauconite": 			{"model" : "rockhounding_rocks:half_deboss_d_lo_glauconite"},
+		"type=dunite": 				{"model" : "rockhounding_rocks:half_deboss_d_lo_dunite"},
+		"type=rhodochrosite":		{"model" : "rockhounding_rocks:half_deboss_d_lo_rhodochrosite"},
+		"type=kakortokite": 		{"model" : "rockhounding_rocks:half_deboss_d_lo_kakortokite"}
+    }
+}

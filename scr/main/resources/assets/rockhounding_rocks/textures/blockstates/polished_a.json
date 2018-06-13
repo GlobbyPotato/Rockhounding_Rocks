@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=black_aventurine": 	{"model" : "rockhounding_rocks:polished_a_black_aventurine"},
+		"type=basanite": 			{"model" : "rockhounding_rocks:polished_a_basanite"},
+		"type=black_granite": 		{"model" : "rockhounding_rocks:polished_a_black_granite"},
+		"type=jet": 				{"model" : "rockhounding_rocks:polished_a_jet"},
+		"type=luxulyanite": 		{"model" : "rockhounding_rocks:polished_a_luxulyanite"},
+		"type=black_onyx": 			{"model" : "rockhounding_rocks:polished_a_black_onyx"},
+		"type=portoro": 			{"model" : "rockhounding_rocks:polished_a_portoro"},
+		"type=snowflake_obsidian": 	{"model" : "rockhounding_rocks:polished_a_snowflake_obsidian"},
+		"type=black_tiger_eye": 	{"model" : "rockhounding_rocks:polished_a_black_tiger_eye"},
+		"type=slate": 				{"model" : "rockhounding_rocks:polished_a_slate"},
+		"type=gabbro": 				{"model" : "rockhounding_rocks:polished_a_gabbro"},
+		"type=blue_aventurine": 	{"model" : "rockhounding_rocks:polished_a_blue_aventurine"},
+		"type=chrysocolla": 		{"model" : "rockhounding_rocks:polished_a_chrysocolla"},
+		"type=blue_granite": 		{"model" : "rockhounding_rocks:polished_a_blue_granite"},
+		"type=blue_jasper": 		{"model" : "rockhounding_rocks:polished_a_blue_jasper"},
+		"type=labradorite": 		{"model" : "rockhounding_rocks:polished_a_labradorite"}
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=larimar": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_larimar"},
+		"type=blue_onyx": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_blue_onyx"},
+		"type=pietersite": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_pietersite"},
+		"type=sodalite": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_sodalite"},
+		"type=blue_tiger_eye": 		{"model" : "rockhounding_rocks:half_tiles_b_lo_blue_tiger_eye"},
+		"type=azurite": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_azurite"},
+		"type=brown_aventurine":	{"model" : "rockhounding_rocks:half_tiles_b_lo_brown_aventurine"},
+		"type=laterite": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_laterite"},
+		"type=brown_carnelian": 	{"model" : "rockhounding_rocks:half_tiles_b_lo_brown_carnelian"},
+		"type=brown_porphyry": 		{"model" : "rockhounding_rocks:half_tiles_b_lo_brown_porphyry"},
+		"type=scoria": 				{"model" : "rockhounding_rocks:half_tiles_b_lo_scoria"},
+		"type=smoky_quartz": 		{"model" : "rockhounding_rocks:half_tiles_b_lo_smoky_quartz"},
+		"type=bronzite": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_bronzite"},
+		"type=tiger_iron": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_tiger_iron"},
+		"type=arkose": 				{"model" : "rockhounding_rocks:half_tiles_b_lo_arkose"},
+		"type=ignimbrite": 			{"model" : "rockhounding_rocks:half_tiles_b_lo_ignimbrite"}
+    }
+}

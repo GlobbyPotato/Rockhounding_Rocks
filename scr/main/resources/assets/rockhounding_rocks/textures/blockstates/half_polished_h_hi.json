@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=apache_rhyolite": 		{"model" : "rockhounding_rocks:half_polished_h_hi_apache_rhyolite"},
+		"type=ammolite": 			{"model" : "rockhounding_rocks:half_polished_h_hi_ammolite"},
+		"type=dendritic_opal": 		{"model" : "rockhounding_rocks:half_polished_h_hi_dendritic_opal"},
+		"type=oolite": 			{"model" : "rockhounding_rocks:half_polished_h_hi_oolite"},
+		"type=gray_schist": 	{"model" : "rockhounding_rocks:half_polished_h_hi_gray_schist"},
+		"type=guadalupe_jasper": 			{"model" : "rockhounding_rocks:half_polished_h_hi_guadalupe_jasper"},
+ 		"type=tree_agate":	{"model" : "rockhounding_rocks:half_polished_h_hi_tree_agate"},
+		"type=blue_schist": 		{"model" : "rockhounding_rocks:half_polished_h_hi_blue_schist"},
+		"type=umber": 		{"model" : "rockhounding_rocks:half_polished_h_hi_umber"},
+		"type=breccia": 		{"model" : "rockhounding_rocks:half_polished_h_hi_breccia"},
+		"type=actinolite": 	{"model" : "rockhounding_rocks:half_polished_h_hi_actinolite"},
+		"type=madagascar_rhyolite": 	{"model" : "rockhounding_rocks:half_polished_h_hi_madagascar_rhyolite"},
+		"type=wonderstone": 	{"model" : "rockhounding_rocks:half_polished_h_hi_wonderstone"},
+		"type=opal": 		{"model" : "rockhounding_rocks:half_polished_h_hi_opal"},
+		"type=apatite": 			{"model" : "rockhounding_rocks:half_polished_h_hi_apatite"},
+		"type=eclogite": 			{"model" : "rockhounding_rocks:half_polished_h_hi_eclogite"}
+   }
+}
