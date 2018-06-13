@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/blue_onyx/blocks_b_blue_onyx"
+    }
+}

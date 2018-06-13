@@ -1,0 +1,8 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_dorics_hi",
+    "textures": {
+        "particle": "minecraft:blocks/hardened_clay_stained_purple",
+        "0": "minecraft:blocks/hardened_clay_stained_purple"
+    }
+}

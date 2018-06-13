@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_lo",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/mudstone/blocks_g_mudstone",
+        "0": "rockhounding_rocks:blocks/mudstone/blocks_g_mudstone",
+        "1": "rockhounding_rocks:blocks/mudstone/fluted_g_mudstone"
+        
+    }
+}

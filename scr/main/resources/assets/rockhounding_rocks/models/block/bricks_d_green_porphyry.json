@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/green_porphyry/bricks_d_green_porphyry"
+    }
+}

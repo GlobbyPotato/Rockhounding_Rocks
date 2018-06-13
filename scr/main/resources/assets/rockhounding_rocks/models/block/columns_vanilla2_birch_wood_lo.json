@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_lo",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/birch_wood/blocks_vanilla2_birch_wood",
+        "0": "rockhounding_rocks:blocks/birch_wood/blocks_vanilla2_birch_wood",
+        "1": "rockhounding_rocks:blocks/birch_wood/fluted_vanilla2_birch_wood"
+        
+    }
+}

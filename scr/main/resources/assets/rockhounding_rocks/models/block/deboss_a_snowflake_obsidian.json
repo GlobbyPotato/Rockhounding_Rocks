@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/snowflake_obsidian/deboss_a_snowflake_obsidian"
+    }
+}

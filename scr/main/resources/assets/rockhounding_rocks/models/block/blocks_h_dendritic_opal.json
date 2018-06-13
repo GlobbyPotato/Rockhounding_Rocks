@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/dendritic_opal/blocks_h_dendritic_opal"
+    }
+}

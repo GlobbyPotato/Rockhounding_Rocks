@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_hi",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/pink_trachyte/blocks_e_pink_trachyte",
+        "0": "rockhounding_rocks:blocks/pink_trachyte/blocks_e_pink_trachyte",
+        "1": "rockhounding_rocks:blocks/pink_trachyte/fluted_e_pink_trachyte"
+        
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/yellow_jasper/blocks_g_yellow_jasper"
+    }
+}

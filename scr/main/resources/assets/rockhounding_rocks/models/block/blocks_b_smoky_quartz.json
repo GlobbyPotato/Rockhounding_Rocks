@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/smoky_quartz/blocks_b_smoky_quartz"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/brown_porphyry/carved_b_brown_porphyry"
+    }
+}

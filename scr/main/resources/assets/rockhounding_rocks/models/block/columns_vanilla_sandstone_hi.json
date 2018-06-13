@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_hi",
+    "textures": {
+        "particle": "minecraft:blocks/sandstone_top",
+        "0": "minecraft:blocks/sandstone_top",
+        "1": "rockhounding_rocks:blocks/sandstone/fluted_vanilla_sandstone"
+        
+    }
+}

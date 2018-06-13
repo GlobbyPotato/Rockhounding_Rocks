@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_torso",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/black_granite/blocks_a_black_granite",
+        "0": "rockhounding_rocks:blocks/black_granite/blocks_a_black_granite",
+        "1": "rockhounding_rocks:blocks/black_granite/fluted_a_black_granite"
+        
+    }
+}

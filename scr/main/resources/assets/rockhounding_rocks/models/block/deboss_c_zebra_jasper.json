@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/zebra_jasper/deboss_c_zebra_jasper"
+    }
+}

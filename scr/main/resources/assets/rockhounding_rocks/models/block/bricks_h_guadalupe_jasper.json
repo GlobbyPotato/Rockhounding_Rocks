@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/guadalupe_jasper/bricks_h_guadalupe_jasper"
+    }
+}

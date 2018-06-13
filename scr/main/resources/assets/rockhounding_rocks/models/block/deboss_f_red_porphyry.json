@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/red_porphyry/deboss_f_red_porphyry"
+    }
+}

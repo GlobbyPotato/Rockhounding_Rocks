@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_torso",
+    "textures": {
+        "particle": "minecraft:blocks/hardened_clay_stained_light_blue",
+        "0": "minecraft:blocks/hardened_clay_stained_light_blue",
+        "1": "rockhounding_rocks:blocks/hardened_light_blue/fluted_vanilla_hardened_light_blue"
+        
+    }
+}

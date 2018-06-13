@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/porcelain_jasper/deboss_f_porcelain_jasper"
+    }
+}

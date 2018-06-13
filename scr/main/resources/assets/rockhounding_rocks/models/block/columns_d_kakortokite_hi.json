@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_hi",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/kakortokite/blocks_d_kakortokite",
+        "0": "rockhounding_rocks:blocks/kakortokite/blocks_d_kakortokite",
+        "1": "rockhounding_rocks:blocks/kakortokite/fluted_d_kakortokite"
+        
+    }
+}

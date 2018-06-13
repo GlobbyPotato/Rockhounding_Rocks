@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/blue_aventurine/carved_a_blue_aventurine"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/chrysocolla/blocks_a_chrysocolla"
+    }
+}

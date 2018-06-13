@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_torso",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/red_jasper/blocks_f_red_jasper",
+        "0": "rockhounding_rocks:blocks/red_jasper/blocks_f_red_jasper",
+        "1": "rockhounding_rocks:blocks/red_jasper/fluted_f_red_jasper"
+        
+    }
+}

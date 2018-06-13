@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/concrete_cyan/bricks_vanilla_concrete_cyan"
+    }
+}

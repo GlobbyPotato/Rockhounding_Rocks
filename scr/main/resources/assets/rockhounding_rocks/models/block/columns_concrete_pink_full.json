@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_full",
+    "textures": {
+        "particle": "minecraft:blocks/concrete_pink",
+        "0": "minecraft:blocks/concrete_pink",
+        "1": "rockhounding_rocks:blocks/concrete_pink/fluted_vanilla_concrete_pink"
+        
+    }
+}

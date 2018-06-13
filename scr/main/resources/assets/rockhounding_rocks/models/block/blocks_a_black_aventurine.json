@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/black_aventurine/blocks_a_black_aventurine"
+    }
+}

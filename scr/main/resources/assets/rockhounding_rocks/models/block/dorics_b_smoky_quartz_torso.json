@@ -1,0 +1,8 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_dorics_torso",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/smoky_quartz/blocks_b_smoky_quartz",
+        "0": "rockhounding_rocks:blocks/smoky_quartz/blocks_b_smoky_quartz"
+    }
+}

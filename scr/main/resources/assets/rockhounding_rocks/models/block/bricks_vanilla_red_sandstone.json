@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/red_sandstone/bricks_vanilla_red_sandstone"
+    }
+}

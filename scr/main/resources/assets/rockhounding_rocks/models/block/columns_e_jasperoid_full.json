@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_columns_full",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/jasperoid/blocks_e_jasperoid",
+        "0": "rockhounding_rocks:blocks/jasperoid/blocks_e_jasperoid",
+        "1": "rockhounding_rocks:blocks/jasperoid/fluted_e_jasperoid"
+        
+    }
+}
