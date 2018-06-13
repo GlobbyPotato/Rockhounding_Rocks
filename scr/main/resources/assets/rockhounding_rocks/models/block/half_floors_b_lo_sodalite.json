@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/sodalite/floors_b_sodalite",
+        "top": "rockhounding_rocks:blocks/sodalite/floors_b_sodalite",
+        "side": "rockhounding_rocks:blocks/sodalite/slabs_b_sodalite"
+    }
+}

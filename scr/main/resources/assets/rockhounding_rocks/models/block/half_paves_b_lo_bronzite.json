@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/bronzite/paves_b_bronzite",
+        "top": "rockhounding_rocks:blocks/bronzite/paves_b_bronzite",
+        "side": "rockhounding_rocks:blocks/bronzite/paves_b_bronzite"
+    }
+}

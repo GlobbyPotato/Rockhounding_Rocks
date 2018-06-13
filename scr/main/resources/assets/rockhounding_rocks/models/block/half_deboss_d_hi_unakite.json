@@ -1,0 +1,8 @@
+{
+    "parent": "block/upper_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/unakite/deboss_d_unakite",
+        "top": "rockhounding_rocks:blocks/unakite/deboss_d_unakite",
+        "side": "rockhounding_rocks:blocks/unakite/slabs_d_unakite"
+    }
+}

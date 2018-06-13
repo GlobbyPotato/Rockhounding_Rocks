@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/charoite/bricks_e_charoite",
+        "top": "rockhounding_rocks:blocks/charoite/bricks_e_charoite",
+        "side": "rockhounding_rocks:blocks/charoite/bricks_e_charoite"
+    }
+}

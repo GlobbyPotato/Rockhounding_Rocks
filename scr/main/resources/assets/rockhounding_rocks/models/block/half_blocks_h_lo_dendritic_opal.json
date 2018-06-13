@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/dendritic_opal/blocks_h_dendritic_opal",
+        "top": "rockhounding_rocks:blocks/dendritic_opal/blocks_h_dendritic_opal",
+        "side": "rockhounding_rocks:blocks/dendritic_opal/blocks_h_dendritic_opal"
+    }
+}

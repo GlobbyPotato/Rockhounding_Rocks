@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/chalk/tiles_f_chalk",
+        "top": "rockhounding_rocks:blocks/chalk/tiles_f_chalk",
+        "side": "rockhounding_rocks:blocks/chalk/tiles_f_chalk"
+    }
+}

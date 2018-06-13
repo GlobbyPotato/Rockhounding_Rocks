@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/brown_carnelian/polished_b_brown_carnelian",
+        "top": "rockhounding_rocks:blocks/brown_carnelian/polished_b_brown_carnelian",
+        "side": "rockhounding_rocks:blocks/brown_carnelian/slabs_b_brown_carnelian"
+    }
+}

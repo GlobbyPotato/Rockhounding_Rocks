@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/green_aventurine/floors_c_green_aventurine",
+        "top": "rockhounding_rocks:blocks/green_aventurine/floors_c_green_aventurine",
+        "side": "rockhounding_rocks:blocks/green_aventurine/slabs_c_green_aventurine"
+    }
+}

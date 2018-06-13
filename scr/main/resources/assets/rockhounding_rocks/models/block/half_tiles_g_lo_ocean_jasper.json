@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/ocean_jasper/tiles_g_ocean_jasper",
+        "top": "rockhounding_rocks:blocks/ocean_jasper/tiles_g_ocean_jasper",
+        "side": "rockhounding_rocks:blocks/ocean_jasper/tiles_g_ocean_jasper"
+    }
+}

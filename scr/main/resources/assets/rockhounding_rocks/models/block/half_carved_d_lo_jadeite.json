@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/jadeite/carved_d_jadeite",
+        "top": "rockhounding_rocks:blocks/jadeite/carved_d_jadeite",
+        "side": "rockhounding_rocks:blocks/jadeite/slabs_d_jadeite"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/green_onyx/shorts_c_green_onyx",
+        "top": "rockhounding_rocks:blocks/green_onyx/shorts_c_green_onyx",
+        "side": "rockhounding_rocks:blocks/green_onyx/shorts_c_green_onyx"
+    }
+}

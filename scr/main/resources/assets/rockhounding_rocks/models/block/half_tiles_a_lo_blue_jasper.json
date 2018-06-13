@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/blue_jasper/tiles_a_blue_jasper",
+        "top": "rockhounding_rocks:blocks/blue_jasper/tiles_a_blue_jasper",
+        "side": "rockhounding_rocks:blocks/blue_jasper/tiles_a_blue_jasper"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/dunite/shorts_d_dunite",
+        "top": "rockhounding_rocks:blocks/dunite/shorts_d_dunite",
+        "side": "rockhounding_rocks:blocks/dunite/shorts_d_dunite"
+    }
+}

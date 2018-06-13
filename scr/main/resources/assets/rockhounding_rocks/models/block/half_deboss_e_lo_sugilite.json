@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/sugilite/deboss_e_sugilite",
+        "top": "rockhounding_rocks:blocks/sugilite/deboss_e_sugilite",
+        "side": "rockhounding_rocks:blocks/sugilite/slabs_e_sugilite"
+    }
+}

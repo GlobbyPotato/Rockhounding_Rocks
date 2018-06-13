@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/pietersite/floors_b_pietersite",
+        "top": "rockhounding_rocks:blocks/pietersite/floors_b_pietersite",
+        "side": "rockhounding_rocks:blocks/pietersite/slabs_b_pietersite"
+    }
+}

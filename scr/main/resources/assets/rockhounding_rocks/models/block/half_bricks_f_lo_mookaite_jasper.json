@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/mookaite_jasper/bricks_f_mookaite_jasper",
+        "top": "rockhounding_rocks:blocks/mookaite_jasper/bricks_f_mookaite_jasper",
+        "side": "rockhounding_rocks:blocks/mookaite_jasper/bricks_f_mookaite_jasper"
+    }
+}

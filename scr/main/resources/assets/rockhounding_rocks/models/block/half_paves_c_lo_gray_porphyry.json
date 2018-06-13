@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/gray_porphyry/paves_c_gray_porphyry",
+        "top": "rockhounding_rocks:blocks/gray_porphyry/paves_c_gray_porphyry",
+        "side": "rockhounding_rocks:blocks/gray_porphyry/paves_c_gray_porphyry"
+    }
+}

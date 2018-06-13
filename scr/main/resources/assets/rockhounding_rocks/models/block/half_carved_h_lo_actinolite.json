@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/actinolite/carved_h_actinolite",
+        "top": "rockhounding_rocks:blocks/actinolite/carved_h_actinolite",
+        "side": "rockhounding_rocks:blocks/actinolite/slabs_h_actinolite"
+    }
+}

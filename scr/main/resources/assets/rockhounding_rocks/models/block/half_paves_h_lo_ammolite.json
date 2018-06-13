@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/ammolite/paves_h_ammolite",
+        "top": "rockhounding_rocks:blocks/ammolite/paves_h_ammolite",
+        "side": "rockhounding_rocks:blocks/ammolite/paves_h_ammolite"
+    }
+}

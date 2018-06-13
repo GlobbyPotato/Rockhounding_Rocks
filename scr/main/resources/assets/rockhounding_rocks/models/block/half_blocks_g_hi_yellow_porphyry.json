@@ -1,0 +1,8 @@
+{
+    "parent": "block/upper_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/yellow_porphyry/blocks_g_yellow_porphyry",
+        "top": "rockhounding_rocks:blocks/yellow_porphyry/blocks_g_yellow_porphyry",
+        "side": "rockhounding_rocks:blocks/yellow_porphyry/blocks_g_yellow_porphyry"
+    }
+}

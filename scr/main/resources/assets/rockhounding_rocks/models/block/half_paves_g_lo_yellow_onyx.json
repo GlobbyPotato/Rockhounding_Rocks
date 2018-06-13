@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/yellow_onyx/paves_g_yellow_onyx",
+        "top": "rockhounding_rocks:blocks/yellow_onyx/paves_g_yellow_onyx",
+        "side": "rockhounding_rocks:blocks/yellow_onyx/paves_g_yellow_onyx"
+    }
+}

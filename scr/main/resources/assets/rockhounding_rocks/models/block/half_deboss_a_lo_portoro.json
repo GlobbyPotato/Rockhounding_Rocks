@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/portoro/deboss_a_portoro",
+        "top": "rockhounding_rocks:blocks/portoro/deboss_a_portoro",
+        "side": "rockhounding_rocks:blocks/portoro/slabs_a_portoro"
+    }
+}

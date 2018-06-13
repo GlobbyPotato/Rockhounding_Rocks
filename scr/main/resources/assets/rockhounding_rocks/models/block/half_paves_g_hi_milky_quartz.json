@@ -1,0 +1,8 @@
+{
+    "parent": "block/upper_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/milky_quartz/paves_g_milky_quartz",
+        "top": "rockhounding_rocks:blocks/milky_quartz/paves_g_milky_quartz",
+        "side": "rockhounding_rocks:blocks/milky_quartz/paves_g_milky_quartz"
+    }
+}

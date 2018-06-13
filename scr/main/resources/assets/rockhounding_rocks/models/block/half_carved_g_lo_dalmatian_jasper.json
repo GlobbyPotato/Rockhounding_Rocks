@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/dalmatian_jasper/carved_g_dalmatian_jasper",
+        "top": "rockhounding_rocks:blocks/dalmatian_jasper/carved_g_dalmatian_jasper",
+        "side": "rockhounding_rocks:blocks/dalmatian_jasper/slabs_g_dalmatian_jasper"
+    }
+}

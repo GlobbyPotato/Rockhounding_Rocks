@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/alabaster/floors_f_alabaster",
+        "top": "rockhounding_rocks:blocks/alabaster/floors_f_alabaster",
+        "side": "rockhounding_rocks:blocks/alabaster/slabs_f_alabaster"
+    }
+}

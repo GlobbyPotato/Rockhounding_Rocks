@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/opal/tiles_h_opal",
+        "top": "rockhounding_rocks:blocks/opal/tiles_h_opal",
+        "side": "rockhounding_rocks:blocks/opal/tiles_h_opal"
+    }
+}

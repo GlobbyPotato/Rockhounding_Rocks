@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/snowflake_obsidian/carved_a_snowflake_obsidian",
+        "top": "rockhounding_rocks:blocks/snowflake_obsidian/carved_a_snowflake_obsidian",
+        "side": "rockhounding_rocks:blocks/snowflake_obsidian/slabs_a_snowflake_obsidian"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/half_slab",
+    "textures": {
+        "bottom": "rockhounding_rocks:blocks/rose_red/polished_f_rose_red",
+        "top": "rockhounding_rocks:blocks/rose_red/polished_f_rose_red",
+        "side": "rockhounding_rocks:blocks/rose_red/slabs_f_rose_red"
+    }
+}
