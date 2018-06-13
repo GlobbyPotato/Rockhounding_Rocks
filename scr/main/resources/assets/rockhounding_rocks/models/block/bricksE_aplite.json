@@ -1,9 +1,0 @@
-{
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
-    "parent": "rockhounding_rocks:block/base_bricks",
-    "textures": {
-        "particle": "rockhounding_rocks:blocks/blocksE_aplite",
-        "0": "rockhounding_rocks:blocks/blocksE_aplite",
-        "1": "rockhounding_rocks:blocks/overlay_brick"
-    }
-}

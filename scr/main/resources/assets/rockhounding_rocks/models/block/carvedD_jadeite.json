@@ -1,9 +1,0 @@
-{
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
-    "parent": "rockhounding_rocks:block/base_carved",
-    "textures": {
-        "particle": "rockhounding_rocks:blocks/blocksD_jadeite",
-        "0": "rockhounding_rocks:blocks/blocksD_jadeite",
-        "1": "rockhounding_rocks:blocks/overlay_carved"
-    }
-}
