@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/dark_oak_wood/polished_vanilla2_dark_oak_wood"
+    }
+}

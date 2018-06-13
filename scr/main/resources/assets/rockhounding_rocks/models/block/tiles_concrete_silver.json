@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/concrete_silver/tiles_vanilla_concrete_silver"
+    }
+}

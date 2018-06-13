@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/spiderweb_jasper/slabs_c_spiderweb_jasper"
+    }
+}

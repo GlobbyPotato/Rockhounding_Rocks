@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_steles_lo",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/green_porphyry/blocks_d_green_porphyry",
+        "0": "rockhounding_rocks:blocks/green_porphyry/blocks_d_green_porphyry",
+        "1": "minecraft:blocks/portal"
+        
+    }
+}

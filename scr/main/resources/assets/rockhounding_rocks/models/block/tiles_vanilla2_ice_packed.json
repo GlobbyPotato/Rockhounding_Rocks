@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+		"all": "rockhounding_rocks:blocks/ice_packed/tiles_vanilla2_ice_packed"
+    }
+}

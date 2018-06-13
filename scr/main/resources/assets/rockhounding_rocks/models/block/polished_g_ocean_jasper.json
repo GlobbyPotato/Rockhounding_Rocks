@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/ocean_jasper/polished_g_ocean_jasper"
+    }
+}

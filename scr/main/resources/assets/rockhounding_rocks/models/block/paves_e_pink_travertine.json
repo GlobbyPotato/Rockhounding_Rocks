@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/pink_travertine/paves_e_pink_travertine"
+    }
+}

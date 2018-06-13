@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/brown_aventurine/tiles_b_brown_aventurine"
+    }
+}

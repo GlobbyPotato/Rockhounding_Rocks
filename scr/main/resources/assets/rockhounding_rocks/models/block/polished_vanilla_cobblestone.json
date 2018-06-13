@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/cobblestone/polished_vanilla_cobblestone"
+    }
+}

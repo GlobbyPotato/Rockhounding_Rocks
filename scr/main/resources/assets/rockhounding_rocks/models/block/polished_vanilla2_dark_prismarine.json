@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/dark_prismarine/polished_vanilla2_dark_prismarine"
+    }
+}

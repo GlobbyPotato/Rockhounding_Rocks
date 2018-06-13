@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/gray_tuff/shorts_c_gray_tuff"
+    }
+}

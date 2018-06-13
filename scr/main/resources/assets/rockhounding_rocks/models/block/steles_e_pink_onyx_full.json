@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_steles_full",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/pink_onyx/blocks_e_pink_onyx",
+        "0": "rockhounding_rocks:blocks/pink_onyx/blocks_e_pink_onyx",
+        "1": "minecraft:blocks/portal"
+        
+   	}
+}

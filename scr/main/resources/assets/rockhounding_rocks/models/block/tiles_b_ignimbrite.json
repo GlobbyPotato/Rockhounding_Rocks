@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/ignimbrite/tiles_b_ignimbrite"
+    }
+}

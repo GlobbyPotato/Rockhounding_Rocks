@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/gray_travertine/polished_c_gray_travertine"
+    }
+}

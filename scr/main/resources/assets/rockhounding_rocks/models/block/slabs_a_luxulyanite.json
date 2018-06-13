@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/luxulyanite/slabs_a_luxulyanite"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/hardened_gray/polished_vanilla_hardened_gray"
+    }
+}

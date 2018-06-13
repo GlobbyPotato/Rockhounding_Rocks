@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/green_aventurine/polished_c_green_aventurine"
+    }
+}

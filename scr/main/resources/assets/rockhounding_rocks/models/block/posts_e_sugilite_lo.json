@@ -1,0 +1,8 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_posts_lo",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/sugilite/blocks_e_sugilite",
+        "0": "rockhounding_rocks:blocks/sugilite/blocks_e_sugilite"
+    }
+}

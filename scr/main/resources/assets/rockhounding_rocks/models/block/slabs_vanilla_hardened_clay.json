@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+		"all": "rockhounding_rocks:blocks/hardened_clay/slabs_vanilla_hardened_clay"
+    }
+}

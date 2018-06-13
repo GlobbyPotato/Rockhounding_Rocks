@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/hardened_light_blue/tiles_vanilla_hardened_light_blue"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/madagascar_rhyolite/rocks_h_madagascar_rhyolite"
+    }
+}

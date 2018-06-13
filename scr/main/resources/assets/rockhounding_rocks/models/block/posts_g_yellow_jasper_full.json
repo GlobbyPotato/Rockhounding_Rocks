@@ -1,0 +1,8 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_posts_full",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/yellow_jasper/blocks_g_yellow_jasper",
+        "0": "rockhounding_rocks:blocks/yellow_jasper/blocks_g_yellow_jasper"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_twisted",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/purple_porphyry/blocks_e_purple_porphyry",
+        "0": "rockhounding_rocks:blocks/purple_porphyry/blocks_e_purple_porphyry"
+    }
+
+}

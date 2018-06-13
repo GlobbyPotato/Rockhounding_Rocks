@@ -1,0 +1,10 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_steles_torso",
+    "textures": {
+        "particle": "minecraft:blocks/concrete_silver",
+        "0": "minecraft:blocks/concrete_silver",
+        "1": "minecraft:blocks/portal"
+        
+    }
+}

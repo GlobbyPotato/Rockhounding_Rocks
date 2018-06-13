@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/noreena_jasper/polished_f_noreena_jasper"
+    }
+}
