@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:machines",
+	"pattern": [
+		"L L",
+		"TTT",
+		"L L"
+	],
+	"key": {
+		"L":{
+				"item": "#LEATHER"
+			},
+		"T":{
+				"item": "#TIMBER"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:machines",			
+				"data": 4
+			}
+}

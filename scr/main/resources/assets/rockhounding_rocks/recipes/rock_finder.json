@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "rockhounding_rocks:utils",
+	"ingredients":[
+		{
+			"item": "#BOOK"
+		},
+		{
+			"item": "#STONE"
+		},
+		{
+			"item": "#STONE"
+		},
+		{
+			"item": "#STONE"
+		}
+	],
+	"result":{
+				"item": "rockhounding_rocks:rock_finder"			
+			}
+}

@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:blocks",
+	"pattern": [
+		"MMM",
+		"MDM",
+		"MMM"
+	],
+	"key": {
+		"M":{
+				"item": "minecraft:prismarine",			
+				"data": 0
+			},
+		"D":{
+				"item": "#BLACK_DYE"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:blocks_vanilla2",			
+				"data": 6,
+				"count": 8
+			}
+}

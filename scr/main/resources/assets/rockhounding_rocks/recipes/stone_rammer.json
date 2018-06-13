@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:machines",
+	"pattern": [
+		"GGG",
+		"TLT",
+		"H H"
+	],
+	"key": {
+		"L":{
+				"item": "#WOOD_LOG"
+			},
+		"G":{
+				"item": "#WOOD_GEAR"
+			},
+		"H":{
+				"item": "#SLEDGEHAMMER"
+			},
+		"T":{
+				"item": "#TIMBER"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:machines",			
+				"data": 5
+			}
+}

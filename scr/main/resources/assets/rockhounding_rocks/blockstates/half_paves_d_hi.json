@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=green_porphyry": 		{"model" : "rockhounding_rocks:half_paves_d_hi_green_porphyry"},
+		"type=green_jasper": 		{"model" : "rockhounding_rocks:half_paves_d_hi_green_jasper"},
+		"type=bloodstone": 			{"model" : "rockhounding_rocks:half_paves_d_hi_bloodstone"},
+		"type=jadeite": 			{"model" : "rockhounding_rocks:half_paves_d_hi_jadeite"},
+		"type=malachite": 			{"model" : "rockhounding_rocks:half_paves_d_hi_malachite"},
+		"type=serpentinite": 		{"model" : "rockhounding_rocks:half_paves_d_hi_serpentinite"},
+		"type=zoisite": 			{"model" : "rockhounding_rocks:half_paves_d_hi_zoisite"},
+		"type=green_tiger_eye": 	{"model" : "rockhounding_rocks:half_paves_d_hi_green_tiger_eye"},
+		"type=green_tuff": 			{"model" : "rockhounding_rocks:half_paves_d_hi_green_tuff"},
+		"type=unakite": 			{"model" : "rockhounding_rocks:half_paves_d_hi_unakite"},
+		"type=chrysoprase": 		{"model" : "rockhounding_rocks:half_paves_d_hi_chrysoprase"},
+		"type=rainforest_jasper": 	{"model" : "rockhounding_rocks:half_paves_d_hi_rainforest_jasper"},
+		"type=glauconite": 			{"model" : "rockhounding_rocks:half_paves_d_hi_glauconite"},
+		"type=dunite": 				{"model" : "rockhounding_rocks:half_paves_d_hi_dunite"},
+		"type=rhodochrosite":		{"model" : "rockhounding_rocks:half_paves_d_hi_rhodochrosite"},
+		"type=kakortokite": 		{"model" : "rockhounding_rocks:half_paves_d_hi_kakortokite"}
+    }
+}

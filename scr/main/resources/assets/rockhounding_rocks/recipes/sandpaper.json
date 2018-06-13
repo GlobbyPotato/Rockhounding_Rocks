@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:utils",
+	"pattern": [
+		"FFF",
+		" S ",
+		"PPP"
+	],
+	"key": {
+		"F":{
+				"item": "minecraft:flint"			
+			},
+		"P":{
+				"item": "minecraft:paper"			
+			},
+		"S":{
+				"item": "#SLIME_BALL"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:sandpaper"			
+			}
+}

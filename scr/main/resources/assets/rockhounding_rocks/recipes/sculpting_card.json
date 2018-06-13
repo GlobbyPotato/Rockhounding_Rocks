@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:utils",
+	"pattern": [
+		"STS",
+		"STS",
+		"STS"
+	],
+	"key": {
+		"S":{
+				"item": "#STICK"
+			},
+		"T":{
+				"item": "#TIMBER"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:sculpting_cards",			
+				"data": 0
+			}
+}

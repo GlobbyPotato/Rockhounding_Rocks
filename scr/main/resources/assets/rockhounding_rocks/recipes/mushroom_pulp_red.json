@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:blocks",
+	"pattern": [
+		"MM",
+		"MM"
+	],
+	"key": {
+		"M":{
+				"item": "minecraft:red_mushroom_block",			
+				"data": 0
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:blocks_vanilla2",			
+				"data": 5,
+				"count": 4
+			}
+}

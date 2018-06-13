@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:machines",
+	"pattern": [
+		" I ",
+		"PLP",
+		" T "
+	],
+	"key": {
+		"L":{
+				"item": "#WOOD_LOG"
+			},
+		"I":{
+				"item": "#IRON_INGOT"
+			},
+		"P":{
+				"item": "#PADDLE"
+			},
+		"T":{
+				"item": "#TIMBER"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:machines",			
+				"data": 2			
+			}
+}

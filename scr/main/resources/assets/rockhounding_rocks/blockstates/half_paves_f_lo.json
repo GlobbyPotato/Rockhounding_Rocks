@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=red_onyx": 			{"model" : "rockhounding_rocks:half_paves_f_lo_red_onyx"},
+		"type=red_porphyry": 		{"model" : "rockhounding_rocks:half_paves_f_lo_red_porphyry"},
+		"type=red_jasper": 			{"model" : "rockhounding_rocks:half_paves_f_lo_red_jasper"},
+		"type=rose_red": 			{"model" : "rockhounding_rocks:half_paves_f_lo_rose_red"},
+		"type=sunstone": 			{"model" : "rockhounding_rocks:half_paves_f_lo_sunstone"},
+		"type=red_trachyte": 		{"model" : "rockhounding_rocks:half_paves_f_lo_red_trachyte"},
+		"type=noreena_jasper": 		{"model" : "rockhounding_rocks:half_paves_f_lo_noreena_jasper"},
+		"type=mookaite_jasper": 	{"model" : "rockhounding_rocks:half_paves_f_lo_mookaite_jasper"},
+		"type=red_tiger_eye": 		{"model" : "rockhounding_rocks:half_paves_f_lo_red_tiger_eye"},
+		"type=jaspilite": 			{"model" : "rockhounding_rocks:half_paves_f_lo_jaspilite"},
+ 		"type=alabaster":			{"model" : "rockhounding_rocks:half_paves_f_lo_alabaster"},
+		"type=chalk": 				{"model" : "rockhounding_rocks:half_paves_f_lo_chalk"},
+		"type=white_granite": 		{"model" : "rockhounding_rocks:half_paves_f_lo_white_granite"},
+		"type=white_onyx": 			{"model" : "rockhounding_rocks:half_paves_f_lo_white_onyx"},
+		"type=moonstone": 			{"model" : "rockhounding_rocks:half_paves_f_lo_moonstone"},
+		"type=porcelain_jasper": 	{"model" : "rockhounding_rocks:half_paves_f_lo_porcelain_jasper"}
+   }
+}

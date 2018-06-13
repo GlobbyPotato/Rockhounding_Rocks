@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:machines",
+	"pattern": [
+		"TTT",
+		"G G",
+		"T T"
+	],
+	"key": {
+		"G":{
+				"item": "#WOOD_GEAR"
+			},
+		"T":{
+				"item": "#TIMBER"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:machines",			
+				"data": 7
+			}
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:utils",
+	"pattern": [
+		"I",
+		"T",
+		"T"
+	],
+	"key": {
+		"I":{
+				"item": "#IRON_INGOT"
+			},
+		"T":{
+				"item": "#TIMBER"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:dummy_hammer",			
+				"data": 0
+			}
+}

@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=purpur": 				{"model" : "rockhounding_rocks:slabs_vanilla2_purpur"},
+		"type=glowstone": 		{"model" : "rockhounding_rocks:slabs_vanilla2_glowstone"},
+		"type=ice_packed": 		{"model" : "rockhounding_rocks:slabs_vanilla2_ice_packed"},
+		"type=brown_mushroom": 	{"model" : "rockhounding_rocks:slabs_vanilla2_brown_mushroom"},
+		"type=red_mushroom": 	{"model" : "rockhounding_rocks:slabs_vanilla2_red_mushroom"},
+		"type=side_mushroom": 			{"model" : "rockhounding_rocks:slabs_vanilla2_side_mushroom"},
+		"type=dark_prismarine": 		{"model" : "rockhounding_rocks:slabs_vanilla2_dark_prismarine"},
+		"type=sponge": 			{"model" : "rockhounding_rocks:slabs_vanilla2_sponge"},
+		"type=mycelium": 			{"model" : "rockhounding_rocks:slabs_vanilla2_mycelium"},
+		"type=leather": 			{"model" : "rockhounding_rocks:slabs_vanilla2_leather"},
+		"type=oak_wood": 			{"model" : "rockhounding_rocks:slabs_vanilla2_oak_wood"},
+		"type=birch_wood": 			{"model" : "rockhounding_rocks:slabs_vanilla2_birch_wood"},
+		"type=jungle_wood": 				{"model" : "rockhounding_rocks:slabs_vanilla2_jungle_wood"},
+		"type=spruce_wood": 				{"model" : "rockhounding_rocks:slabs_vanilla2_spruce_wood"},
+		"type=dark_oak_wood": 		{"model" : "rockhounding_rocks:slabs_vanilla2_dark_oak_wood"},
+		"type=acacia_wood": 				{"model" : "rockhounding_rocks:slabs_vanilla2_acacia_wood"}
+    }
+}

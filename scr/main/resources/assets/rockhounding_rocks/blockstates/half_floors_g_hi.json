@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=milky_quartz": 		{"model" : "rockhounding_rocks:half_floors_g_hi_milky_quartz"},
+		"type=white_tuff": 			{"model" : "rockhounding_rocks:half_floors_g_hi_white_tuff"},
+		"type=ocean_jasper": 		{"model" : "rockhounding_rocks:half_floors_g_hi_ocean_jasper"},
+		"type=howlite": 			{"model" : "rockhounding_rocks:half_floors_g_hi_howlite"},
+		"type=dalmatian_jasper": 	{"model" : "rockhounding_rocks:half_floors_g_hi_dalmatian_jasper"},
+		"type=diatomite": 			{"model" : "rockhounding_rocks:half_floors_g_hi_diatomite"},
+ 		"type=yellow_aventurine":	{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_aventurine"},
+		"type=yellow_granite": 		{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_granite"},
+		"type=yellow_jasper": 		{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_jasper"},
+		"type=yellow_onyx": 		{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_onyx"},
+		"type=yellow_porphyry": 	{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_porphyry"},
+		"type=yellow_tiger_eye": 	{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_tiger_eye"},
+		"type=yellow_trachyte": 	{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_trachyte"},
+		"type=yellow_tuff": 		{"model" : "rockhounding_rocks:half_floors_g_hi_yellow_tuff"},
+		"type=mudstone": 			{"model" : "rockhounding_rocks:half_floors_g_hi_mudstone"},
+		"type=felsite": 			{"model" : "rockhounding_rocks:half_floors_g_hi_felsite"}
+   }
+}

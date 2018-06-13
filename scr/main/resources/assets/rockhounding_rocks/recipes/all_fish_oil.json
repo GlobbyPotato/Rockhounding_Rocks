@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "rockhounding_rocks:utils",
+	"ingredients":[
+		{
+			"item": "#BOTTLE"
+		},
+		{
+			"item": "#ALL_FISHES"
+		}
+	],
+	"result":{
+				"item": "rockhounding_rocks:misc_items",
+				"data": 0
+			}
+}

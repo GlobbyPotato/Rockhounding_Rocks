@@ -1,0 +1,25 @@
+[
+	{"name": "WOOD_LOG",			"ingredient": {	"ore":  "logWood", "type": "forge:ore_dict"				 	 }},
+	{"name": "STICK",				"ingredient": {	"ore":  "stickWood", "type": "forge:ore_dict"				 }},
+	{"name": "WOOD_PLANK",			"ingredient": {	"ore":  "plankWood", "type": "forge:ore_dict"				 }},
+	{"name": "DIAMOND",				"ingredient": {	"ore":  "gemDiamond", "type": "forge:ore_dict"				 }},
+	{"name": "IRON_BLOCK",			"ingredient": {	"ore":  "blockIron", "type": "forge:ore_dict"				 }},
+	{"name": "IRON_INGOT",			"ingredient": {	"ore":  "ingotIron", "type": "forge:ore_dict"				 }},
+	{"name": "STONE",				"ingredient": {	"ore":  "stone", "type": "forge:ore_dict"					 }},
+	{"name": "SLIME_BALL",			"ingredient": {	"ore":  "slimeball", "type": "forge:ore_dict"				 }},
+	{"name": "REDSTONE_DUST",		"ingredient": {	"ore":  "dustRedstone", "type": "forge:ore_dict"			 }},
+	{"name": "ALL_FISHES",			"ingredient": {	"ore":  "listAllfish", "type": "forge:ore_dict"				 }},
+	{"name": "GLASS",				"ingredient": {	"ore":  "blockGlass", "type": "forge:ore_dict"				 }},
+	{"name": "BOTTLE",				"ingredient": {	"item": "minecraft:glass_bottle",					"data": 0}},
+	{"name": "BOOK",				"ingredient": {	"item": "minecraft:book",							"data": 0}},
+	{"name": "LEATHER",				"ingredient": {	"item": "minecraft:leather",						"data": 0}},
+	{"name": "BLACK_DYE",			"ingredient": {	"ore":  "dyeBlack", "type": "forge:ore_dict"				 }},
+	{"name": "STONE",				"ingredient": {	"ore":  "stone", "type": "forge:ore_dict"				 }},
+
+	{"name": "FISH_OIL",			"ingredient": {	"item": "rockhounding_rocks:misc_items",			"data": 0}},
+	{"name": "TIMBER",				"ingredient": {	"item": "rockhounding_rocks:misc_items",			"data": 1}},
+	{"name": "PADDLE",				"ingredient": {	"item": "rockhounding_rocks:misc_items",			"data": 2}},
+	{"name": "WOOD_GEAR",			"ingredient": {	"item": "rockhounding_rocks:misc_items",			"data": 3}},
+	{"name": "SLEDGEHAMMER",		"ingredient": {	"item": "rockhounding_rocks:misc_items",			"data": 4}}
+
+]

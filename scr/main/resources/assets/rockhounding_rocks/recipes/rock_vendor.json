@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:machines",
+	"pattern": [
+		"BGB",
+		"IRI",
+		"III"
+	],
+	"key": {
+		"R":{
+				"item": "#REDSTONE_DUST"
+			},
+		"I":{
+				"item": "#IRON_INGOT"
+			},
+		"G":{
+				"item": "#GLASS"
+			},
+		"B":{
+				"item": "#BOOK"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:machines",			
+				"data": 1			
+			}
+}

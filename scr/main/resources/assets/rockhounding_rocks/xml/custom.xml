@@ -1,0 +1,6 @@
+<library>
+	<template id="stack_two" height="36">
+        <element index="0" x="3"  y="3"/>
+        <element index="1" x="26" y="3"/>
+    </template>
+</library>

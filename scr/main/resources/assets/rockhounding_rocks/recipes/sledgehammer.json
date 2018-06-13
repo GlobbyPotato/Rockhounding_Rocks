@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:utils",
+	"pattern": [
+		"GTG",
+		" T ",
+		" B "
+	],
+	"key": {
+		"B":{
+				"item": "#IRON_BLOCK"
+			},
+		"G":{
+				"item": "#WOOD_GEAR"
+			},
+		"T":{
+				"item": "#TIMBER"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:misc_items",			
+				"data": 4
+			}
+}

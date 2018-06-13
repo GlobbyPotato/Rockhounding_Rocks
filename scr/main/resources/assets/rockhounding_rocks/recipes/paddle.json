@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "rockhounding_rocks:utils",
+	"pattern": [
+		"IT ",
+		" T ",
+		" TI"
+	],
+	"key": {
+		"T":{
+				"item": "#TIMBER"
+			},
+		"I":{
+				"item": "#IRON_INGOT"
+			}
+	},
+	"result":{
+				"item": "rockhounding_rocks:misc_items",			
+				"data": 2
+			}
+}
