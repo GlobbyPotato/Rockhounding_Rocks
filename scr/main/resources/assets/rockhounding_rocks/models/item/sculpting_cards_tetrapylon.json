@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "rockhounding_rocks:items/sculpting_cards_tetrapylon"
+    }
+}
