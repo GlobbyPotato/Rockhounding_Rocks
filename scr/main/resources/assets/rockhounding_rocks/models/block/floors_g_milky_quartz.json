@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/milky_quartz/floors_g_milky_quartz"
+    }
+}

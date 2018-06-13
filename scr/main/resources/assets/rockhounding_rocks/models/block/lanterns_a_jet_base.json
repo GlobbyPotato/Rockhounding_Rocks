@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_lanterns",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/jet/blocks_a_jet",
+        "0": "rockhounding_rocks:blocks/jet/blocks_a_jet",
+        "1": "rockhounding_rocks:blocks/overlay_lantern"
+    }
+}

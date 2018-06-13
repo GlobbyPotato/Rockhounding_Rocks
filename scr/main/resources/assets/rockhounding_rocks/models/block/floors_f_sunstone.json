@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/sunstone/floors_f_sunstone"
+    }
+}

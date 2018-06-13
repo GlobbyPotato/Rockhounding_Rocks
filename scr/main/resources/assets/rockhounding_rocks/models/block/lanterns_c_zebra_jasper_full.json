@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_lanterns_support",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/zebra_jasper/blocks_c_zebra_jasper",
+        "0": "rockhounding_rocks:blocks/zebra_jasper/blocks_c_zebra_jasper",
+        "1": "rockhounding_rocks:blocks/overlay_lantern"
+    }
+}

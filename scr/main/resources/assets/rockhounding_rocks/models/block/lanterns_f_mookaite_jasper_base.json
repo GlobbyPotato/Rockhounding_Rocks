@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_lanterns",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/mookaite_jasper/blocks_f_mookaite_jasper",
+        "0": "rockhounding_rocks:blocks/mookaite_jasper/blocks_f_mookaite_jasper",
+        "1": "rockhounding_rocks:blocks/overlay_lantern"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_lanterns",
+    "textures": {
+        "particle": "minecraft:blocks/mushroom_block_skin_red",
+        "0": "minecraft:blocks/mushroom_block_skin_red",
+        "1": "rockhounding_rocks:blocks/overlay_lantern"
+    }
+}

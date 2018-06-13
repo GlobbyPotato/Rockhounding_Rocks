@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/white_tuff/floors_g_white_tuff"
+    }
+}

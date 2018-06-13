@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_lanterns_support",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/dendritic_opal/blocks_h_dendritic_opal",
+        "0": "rockhounding_rocks:blocks/dendritic_opal/blocks_h_dendritic_opal",
+        "1": "rockhounding_rocks:blocks/overlay_lantern"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "parent": "rockhounding_rocks:block/base_fountains",
+    "textures": {
+        "particle": "rockhounding_rocks:blocks/sodalite/blocks_b_sodalite",
+        "0": "rockhounding_rocks:blocks/sodalite/blocks_b_sodalite",
+        "1": "minecraft:blocks/water_still"
+    }
+}
