@@ -1,9 +1,0 @@
-{
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
-    "parent": "rockhounding_rocks:block/base_shorts",
-    "textures": {
-        "particle": "minecraft:blocks/snow",
-        "0": "minecraft:blocks/snow",
-        "1": "rockhounding_rocks:blocks/overlay_shortb"
-    }
-}
