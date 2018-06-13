@@ -1,0 +1,91 @@
+v3.14 changelog
+	Some machine ticking hopefully fixed
+	Added a config to disable reverse carving recipes to alleviate the Carving Bench load
+	Minor fixes
+	Core updated to v3.12
+
+v3.12 changelog
+	Added the final set of rocks
+	[Requests] Added more vanilla material and wood variants
+	Minor tweaks
+
+v3.11 changelog
+	Added half slabs for all the block types
+		Config value to enable/disable them
+		Config value to select the recipe type: crafting/machine/both
+	Core updated to v3.08
+
+v3.10 changelog
+	Minor tweaks
+	Some texture cleaning
+
+v3.09 changelog
+	Complete retexturing
+	Restored Chisel&Bit compatibility
+	Translucency removed
+	Some model restyled
+	Rocks can generate in Nether and End by config (set NETHER or END as biome type)
+
+v3.08 changelog
+	Model files cleaning
+	Some column models restyled (wiki)
+	Lantern can combine with pillars and sculptures if blended on its upper end
+	New sculpture: Twisted Slabs
+	Added an option to either extend or separate pillars of different material
+
+v3.07 changelog
+	Added some missing recipes 
+	Added concrete blocks 
+	Added enablers for vanilla, clay and concrete variants 
+	Fixed some model placement conflict 
+	Various mining parameter fixes
+
+v3.06 changelog
+	Fixed a rendering offset issue.
+	The rack accepts the right schemes only if the right bench is correctly placed under it.
+
+v3.05 changelog
+	Required Core: v3.06 
+	Redstone Flux API no longer used in this module
+	Added a guidebook manual (Required Guidebook dependency)
+	Cutting Station
+		Machine fueling disconnected from RF
+		Added a config option to hide the machine from usage
+	issue #3 (Request):  Added a low-tech device line alternative to the Cutting Station
+		Devices
+			Stone Rammer: turns raw rocks into plain blocks 
+			Carving Bench: turns plain blocks into chiseled blocks 
+			Sculpting Bench: turns plain blocks into Sculpted blocks (Columns, sculptures)
+		Accessories
+			Carving Rack: part of the two Benches. Allows to handle tools and schemes 
+			Water Wheel: part of the devices. Provides the transmission to make the devices move. 
+			Rock Platform: part of the devices. Allows to insert/extract worked rocks
+		Various fixes
+
+v3.04 changelog
+	Minor Fixes
+	Core Syncing
+
+v3.03 changelog
+	Fixed guis not opening on server
+
+v3.02 changelog
+	Added the Sandpaper: used on carved blocks while placed, revert them back to plain blocks.
+	Misc fixes
+	Core updated to v3.02
+
+v3.01 changelog
+	New Cut: Paving Tiles
+	JEI improvements
+	Enabled CrafTweaker
+	Core updated to v3.01
+	Minor fixes
+
+v3.00 changelog
+	Initial commit
+		Changes from 1.10/1.11
+
+	Cutting Blade can be Enchanted to improve the machine working
+		Unbreaking: will preserve the consumable from damage
+		Sharpness: will divide the working time to speed up the machine (ticks/Lev)
+		Efficiency: will divide the amount of water consumed per cut (mB/Lev)
