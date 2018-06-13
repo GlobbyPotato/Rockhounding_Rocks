@@ -1,8 +1,0 @@
-{
-    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
-    "parent": "rockhounding_rocks:block/base_fancys_hi",
-    "textures": {
-        "particle": "rockhounding_rocks:blocks/blocksE_red_carnelian",
-        "0": "rockhounding_rocks:blocks/blocksE_red_carnelian"
-    }
-}
