@@ -1,3 +1,7 @@
+v3.15 changelog
+	Fixed the Guidebook dependency, causing server crashes (issue #9).
+	Core synced to v3.13
+
 v3.14 changelog
 	Some machine ticking hopefully fixed
 	Added a config to disable reverse carving recipes to alleviate the Carving Bench load
