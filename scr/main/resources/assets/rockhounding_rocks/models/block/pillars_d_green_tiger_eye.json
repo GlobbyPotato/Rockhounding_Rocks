@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/green_tiger_eye/fluted_d_green_tiger_eye"
+    }
+}
