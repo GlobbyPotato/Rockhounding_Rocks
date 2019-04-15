@@ -1,3 +1,28 @@
+v3.20 changelog
+	Fixed snow layers forming on some cut blocks
+	Fixed torch placing on some cut blocks' sides
+
+v3.19 changelog
+	Improved the machines performance 
+	Required Core v3.17
+
+v3.18 changelog
+	Crafting treated timbers with fish oil will return the empty bottle. Output amount changed back to 4
+	Misc cleanings and fixes
+
+v3.17 changelog
+	Added Fluted Blocks
+	Misc fixes
+
+v3.16 changelog
+	Added walls (with config enabler)
+	Slab recipes removed from Stone Rammer 
+	Several textures updated 
+	Fixed some missing recipes 
+	Minor tweaks and fixes 
+	Core updated to v3.15 
+	Guidebook updated to 2.8.3+
+
 v3.15 changelog
 	Fixed the Guidebook dependency, causing server crashes (issue #9).
 	Core synced to v3.13
