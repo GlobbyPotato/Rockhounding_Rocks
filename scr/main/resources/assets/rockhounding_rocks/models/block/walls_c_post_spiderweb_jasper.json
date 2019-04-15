@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/spiderweb_jasper/blocks_c_spiderweb_jasper"
+    }
+}
