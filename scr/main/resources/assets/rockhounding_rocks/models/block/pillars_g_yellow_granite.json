@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/yellow_granite/fluted_g_yellow_granite"
+    }
+}

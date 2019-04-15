@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/rose_red/fluted_f_rose_red"
+    }
+}
