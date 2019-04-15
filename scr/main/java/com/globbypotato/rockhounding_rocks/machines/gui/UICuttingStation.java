@@ -39,7 +39,7 @@ public class UICuttingStation extends GuiBase {
 		
 		//fuel
 	    if(GuiUtils.hoveringArea(25, 25, 53, 9, mouseX, mouseY, x, y)){
-	    	List<String> tooltip = GuiUtils.drawStorage(TextFormatting.GOLD, "ticks", TextFormatting.YELLOW, this.tile.getCookTimeMax(), this.tile.getPower(), this.tile.getPowerMax(), mouseX, mouseY);
+	    	List<String> tooltip = GuiUtils.drawStorage(TextFormatting.GOLD, "ticks", TextFormatting.YELLOW, this.tile.getCooktimeMax(), this.tile.getPower(), this.tile.getPowerMax(), mouseX, mouseY);
 	    	drawHoveringText(tooltip, mouseX, mouseY, this.fontRenderer);
 	    }
 
@@ -91,7 +91,7 @@ public class UICuttingStation extends GuiBase {
 
         //smelt bar
         if (this.tile.getCooktime() > 0){
-            int k = GuiUtils.getScaledValue(30, this.tile.getCooktime(), this.tile.getCookTimeMax());
+            int k = GuiUtils.getScaledValue(30, this.tile.getCooktime(), this.tile.getCooktimeMax());
             this.drawTexturedModalRect(i + 73, j + 48, 176, 0, k, 17);
         }
 
@@ -112,7 +112,7 @@ public class UICuttingStation extends GuiBase {
 				uiRowOff = 110;
 				xColOff = 223;
 				xRowOff = (thisCut - 9) * 16;
-			}else if(thisCut >= 18 && thisCut <= 20){
+			}else if(thisCut >= 18 && thisCut <= 21){
 				uiColOff = (thisCut - 18) * 18;
 				uiRowOff = 128;
 				xColOff = 239;

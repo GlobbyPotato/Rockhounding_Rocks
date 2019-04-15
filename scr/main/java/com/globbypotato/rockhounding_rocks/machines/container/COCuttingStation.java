@@ -47,13 +47,19 @@ public class COCuttingStation extends ContainerBase<TECuttingStation> {
 		this.addSlotToContainer(new SlotItemHandler(template, 18, 8, 128));
 		this.addSlotToContainer(new SlotItemHandler(template, 19, 26,128));
 		this.addSlotToContainer(new SlotItemHandler(template, 20, 44,128));
+		this.addSlotToContainer(new SlotItemHandler(template, 21, 62,128));
 
 	}
 
 	@Override
 	public ItemStack slotClick(int slot, int dragType, ClickType clickTypeIn, EntityPlayer player){
-		if(slot >= 5 && slot <= 25){ //25 is the total
+		if(slot == 0){
+			this.tile.currentRecipe = null;
+			return super.slotClick(slot, dragType, clickTypeIn, player);
+		}
+		else if(slot >= 5 && slot <= 26){ //26 is the total
 			this.tile.cutSelector = slot - 5;
+			this.tile.currentRecipe = null;
 			doClickSound(player, this.tile.getWorld(), this.tile.getPos());
     		return ItemStack.EMPTY;
     	}
@@ -65,6 +71,6 @@ public class COCuttingStation extends ContainerBase<TECuttingStation> {
 		if(super.mergeItemStack(stack, startIndex, 5, reverseDirection)){
 			return true;
 		}
-		return super.mergeItemStack(stack, 26, endIndex, reverseDirection);
+		return super.mergeItemStack(stack, 27, endIndex, reverseDirection);
     }
 }

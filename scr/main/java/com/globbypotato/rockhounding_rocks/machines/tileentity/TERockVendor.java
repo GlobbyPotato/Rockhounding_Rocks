@@ -56,7 +56,7 @@ public class TERockVendor extends TileEntityInv{
 	public Set<Biome> biomeList;
 	
 	public TERockVendor() {
-		super(inputSlots, outputSlots, templateSlots);
+		super(inputSlots, outputSlots, templateSlots, 0);
 
 		this.input =  new MachineStackHandler(inputSlots, this){
 			@Override

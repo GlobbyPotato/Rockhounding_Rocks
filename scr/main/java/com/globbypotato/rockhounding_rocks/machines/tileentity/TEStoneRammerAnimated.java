@@ -12,6 +12,8 @@ import net.minecraft.item.ItemStack;
 
 public class TEStoneRammerAnimated extends TileEntityIO{
 
+	StoneRammerRecipe currentRecipe = null;
+
 	public TEStoneRammerAnimated() {
 		super(0, 0, 0);
 	}
@@ -72,18 +74,9 @@ public class TEStoneRammerAnimated extends TileEntityIO{
 		return null;
 	}
 
-	public boolean isValidRecipe() {
-		return getCurrentRecipe() != null;
-	}
-
-	private ItemStack recipeOutput() {
-		return isValidRecipe() ? getCurrentRecipe().getOutput() : ItemStack.EMPTY;
-	}
-
 	private boolean canStackOutput() {
-		return hasPlatform() && this.output.canSetOrStack(platformOutput(), recipeOutput());
+		return hasPlatform() && this.output.canSetOrStack(platformOutput(), currentRecipe.getOutput());
 	}
-
 
 
 	//----------------------- PROCESS -----------------------
@@ -92,7 +85,15 @@ public class TEStoneRammerAnimated extends TileEntityIO{
 		if(!world.isRemote){
 			checkCurrentState();
 
-			if(isValidRecipe()){
+			if(platformInput().isEmpty()){
+				currentRecipe = null;
+				this.cooktime = 0;
+			}
+
+			if(currentRecipe == null){
+				currentRecipe = getCurrentRecipe();
+				this.cooktime = 0;
+			}else{
 				if(canStackOutput()){
 					this.cooktime++;
 					if(getCooktime() >= getCooktimeMax()) {
@@ -103,20 +104,14 @@ public class TEStoneRammerAnimated extends TileEntityIO{
 				}else{
 					tickOff();
 				}
-			}else{
-				tickOff();
 			}
 		}
 	}
 
-	private boolean canProcess() {
-		return isValidRecipe()
-			&& canStackOutput();
-	}
-
 	private void process() {
-		platformGetOutput().setOrStack(TERockPlatform.OUTPUT_SLOT, recipeOutput());
+		platformGetOutput().setOrStack(TERockPlatform.OUTPUT_SLOT, currentRecipe.getOutput());
 		platformGetInput().decrementSlot(TERockPlatform.INPUT_SLOT);
+		currentRecipe = null;
 	}
 
 	private void checkCurrentState() {

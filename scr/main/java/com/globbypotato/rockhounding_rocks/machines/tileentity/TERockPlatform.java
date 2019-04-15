@@ -17,10 +17,9 @@ public class TERockPlatform extends TileEntityInv {
 	public static int outputSlots = 1;
 
 	public TERockPlatform() {
-		super(inputSlots, outputSlots, 0);
-		
+		super(inputSlots, outputSlots, 0, 0);
+
 		this.input =  new MachineStackHandler(inputSlots, this){
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public ItemStack insertItem(int slot, ItemStack insertingStack, boolean simulate){
 				if(slot == INPUT_SLOT ){

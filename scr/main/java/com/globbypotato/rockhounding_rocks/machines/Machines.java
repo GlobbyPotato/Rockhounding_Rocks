@@ -29,11 +29,9 @@ import com.globbypotato.rockhounding_rocks.machines.tileentity.TESculptingBenchA
 import com.globbypotato.rockhounding_rocks.machines.tileentity.TEStoneRammer;
 import com.globbypotato.rockhounding_rocks.machines.tileentity.TEStoneRammerAnimated;
 
-import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
-import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -64,7 +62,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Machines extends MachineIO {
 	public static PropertyEnum VARIANT = PropertyEnum.create("variant", EnumMachines.class);
-	public static final PropertyDirection FACING = BlockHorizontal.FACING;
     Random rand = new Random();
 
 	public Machines(String name) {
@@ -168,6 +165,15 @@ public class Machines extends MachineIO {
 			}
 		}
 		return new AxisAlignedBB(minX, 0.0D, minZ, maxX, h, maxZ);
+	}
+
+	@Override
+	public void onBlockClicked(World world, BlockPos pos, EntityPlayer player) {
+		IBlockState state = world.getBlockState(pos);
+		int meta = state.getBlock().getMetaFromState(state);
+		if(CoreUtils.hasWrench(player)){
+			handleRotation(world, pos, player, meta);
+		}
 	}
 
 

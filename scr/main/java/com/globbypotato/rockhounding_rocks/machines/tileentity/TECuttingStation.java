@@ -1,10 +1,13 @@
 package com.globbypotato.rockhounding_rocks.machines.tileentity;
 
+import java.util.ArrayList;
+
 import com.globbypotato.rockhounding_core.machines.tileentity.MachineStackHandler;
 import com.globbypotato.rockhounding_core.machines.tileentity.TemplateStackHandler;
 import com.globbypotato.rockhounding_core.machines.tileentity.TileEntityFueledTank;
 import com.globbypotato.rockhounding_core.machines.tileentity.WrappedItemHandler;
 import com.globbypotato.rockhounding_core.machines.tileentity.WrappedItemHandler.WriteMode;
+import com.globbypotato.rockhounding_core.utils.CoreBasics;
 import com.globbypotato.rockhounding_core.utils.CoreUtils;
 import com.globbypotato.rockhounding_rocks.handler.ModConfig;
 import com.globbypotato.rockhounding_rocks.machines.recipes.CuttingStationRecipes;
@@ -25,18 +28,19 @@ public class TECuttingStation extends TileEntityFueledTank{
 
 	public static int inputSlots = 4;
 	public static int outputSlots = 1;
-	public static int templateSlots = 21;
+	public static int templateSlots = 22;
 	private ItemStackHandler template = new TemplateStackHandler(templateSlots);
 
 	public static final int WATER_SLOT = 3;
 
 	public FluidTank inputTank;
+	public CuttingStationRecipe currentRecipe = null;
 
 	public int cutSelector;
 	public static int consumedWater = 100;
 
 	public TECuttingStation() {
-		super(inputSlots, outputSlots, templateSlots);
+		super(inputSlots, outputSlots, templateSlots, 0);
 
 		this.inputTank = new FluidTank(Fluid.BUCKET_VOLUME * 10){
 			@Override
@@ -149,7 +153,7 @@ public class TECuttingStation extends TileEntityFueledTank{
 		return efficiencyLevel > 0 ? consumedWater / efficiencyLevel : consumedWater;
 	}
 
-	public int getCookTimeMax(){
+	public int getCooktimeMax(){
 		return getMachineSpeed() > 10 ? getMachineSpeed() : 10;
 	}
 
@@ -160,28 +164,55 @@ public class TECuttingStation extends TileEntityFueledTank{
 
 
 
+	//----------------------- RECIPE -----------------------
+	public ArrayList<CuttingStationRecipe> recipeList(){
+		return CuttingStationRecipes.cutting_station_recipes;
+	}
+
+	public CuttingStationRecipe getRecipeList(int x){
+		return recipeList().get(x);
+	}
+
+	public CuttingStationRecipe getCurrentRecipe(){
+		for(int x = 0; x < recipeList().size(); x++){
+			if(getRecipeList(x).getLogic() == this.cutSelector){
+				if(CoreUtils.isMatchingIngredient(inputSlot(), getRecipeList(x).getInput())){
+					return getRecipeList(x);
+				}
+			}
+		}
+		return null;
+	}
+
+
+
 	//----------------------- PROCESS -----------------------
 	@Override
 	public void update(){
 		if(!this.world.isRemote){
 			handleSupplies();
-
 			emptyContainer(WATER_SLOT, this.inputTank);
+			
+			if(inputSlot().isEmpty()){
+				currentRecipe = null;
+				this.cooktime = 0;
+			}
 
-			if(!inputSlot().isEmpty()){
-				if(canCarveBlock()){
+			if(currentRecipe == null){
+				currentRecipe = getCurrentRecipe();
+				this.cooktime = 0;
+			}else{
+				if(canProcess()){
 					this.cooktime++;
 					this.powerCount--;
-					if(getCooktime() >= getCookTimeMax()) {
+					if(getCooktime() >= getCooktimeMax()) {
 						this.cooktime = 0;
-						carveBlock();
+						process();
 					}
 					this.markDirtyClient();
 				}else{
 					tickOff();
 				}
-			}else{
-				tickOff();
 			}
 		}
 	}
@@ -191,36 +222,20 @@ public class TECuttingStation extends TileEntityFueledTank{
 		lavaHandler();
 	}
 
-	private boolean canCarveBlock() {
-		return inputHasRecipe(inputSlot())
-			&& getPower() >= getCookTimeMax()
+	private boolean canProcess() {
+		return getPower() >= getCooktimeMax()
 			&& CoreUtils.hasConsumable(ToolUtils.blade, bladeSlot())
-			&& this.input.canDrainFluid(this.inputTank.getFluid(), waterStack(), getConsumedWater())
-			&& this.output.canSetOrStack(this.output.getStackInSlot(OUTPUT_SLOT), getRecipeOutput(inputSlot()));
+			&& this.input.canDrainFluid(this.inputTank.getFluid(), CoreBasics.waterStack(1000), getConsumedWater())
+			&& this.output.canSetOrStack(this.output.getStackInSlot(OUTPUT_SLOT), currentRecipe.getOutput());
 	}
 
-	private static FluidStack waterStack(){
-		return new FluidStack(FluidRegistry.WATER, 1000);
-	}
-
-	public ItemStack getRecipeOutput(ItemStack inputStack){
-		if(!inputStack.isEmpty()){
-			for(CuttingStationRecipe recipe: CuttingStationRecipes.cutting_station_recipes){
-				if(recipe.getLogic() == this.cutSelector && inputStack.isItemEqual(recipe.getInput())){
-					return recipe.getOutput();
-				}
-			}
-		}
-		return ItemStack.EMPTY;
-	}
-
-	private void carveBlock() {
-		ItemStack recipeOutput = getRecipeOutput(inputSlot());
+	private void process() {
 		int unbreakingLevel = CoreUtils.getEnchantmentLevel(Enchantments.UNBREAKING, bladeSlot());
-		this.output.setOrStack(OUTPUT_SLOT, recipeOutput);
+		this.output.setOrStack(OUTPUT_SLOT, currentRecipe.getOutput());
 		this.input.drainOrCleanFluid(this.inputTank, getConsumedWater(), false);
-		this.input.decrementSlot(INPUT_SLOT);
 		this.input.damageUnbreakingSlot(unbreakingLevel, CONSUMABLE_SLOT);
+		this.input.decrementSlot(INPUT_SLOT);
+		currentRecipe = null;
 	}
 
 }

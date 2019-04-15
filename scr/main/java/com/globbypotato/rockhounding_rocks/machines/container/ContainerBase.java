@@ -48,11 +48,11 @@ public abstract class ContainerBase<T extends TileEntityInv> extends Container {
 			ItemStack itemstack1 = slot.getStack();
 			itemstack = itemstack1.copy();
 
-			if (index < this.tile.SIZE) {
-				if (!this.mergeItemStack(itemstack1, this.tile.SIZE, this.inventorySlots.size(), true)) {
+			if (index < this.tile.INVENTORYSIZE) {
+				if (!this.mergeItemStack(itemstack1, this.tile.INVENTORYSIZE, this.inventorySlots.size(), true)) {
 					return ItemStack.EMPTY;
 				}
-			} else if (!this.mergeItemStack(itemstack1, 0, this.tile.SIZE, false)) {
+			} else if (!this.mergeItemStack(itemstack1, 0, this.tile.INVENTORYSIZE, false)) {
 				return ItemStack.EMPTY;
 			}
 

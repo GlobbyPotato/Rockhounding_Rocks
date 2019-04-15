@@ -137,6 +137,48 @@ public class CarvingBenchRecipes extends BaseRecipes{
 					}
 				}			
 	
+
+				if(ModConfig.ENABLE_PILLARS){
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsA(x), 							EnumCards.PILLAR.ordinal(), 		pillarsA(x)));
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsB(x),						 	EnumCards.PILLAR.ordinal(),			pillarsB(x)));
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsC(x), 							EnumCards.PILLAR.ordinal(),			pillarsC(x)));
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsD(x), 							EnumCards.PILLAR.ordinal(),			pillarsD(x)));
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsE(x), 							EnumCards.PILLAR.ordinal(),			pillarsE(x)));
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsF(x), 							EnumCards.PILLAR.ordinal(),			pillarsF(x)));
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsG(x), 							EnumCards.PILLAR.ordinal(),			pillarsG(x)));
+					carving_bench_recipes.add(new CarvingBenchRecipe(plainsH(x), 							EnumCards.PILLAR.ordinal(),			pillarsH(x)));
+					if(ModConfig.allowReverse){
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsA(x), 						EnumCards.PLAIN.ordinal(), 			plainsA(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsB(x),				 		EnumCards.PLAIN.ordinal(),			plainsB(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsC(x), 						EnumCards.PLAIN.ordinal(),			plainsC(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsD(x), 						EnumCards.PLAIN.ordinal(),			plainsD(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsE(x), 						EnumCards.PLAIN.ordinal(),			plainsE(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsF(x), 						EnumCards.PLAIN.ordinal(),			plainsF(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsG(x), 						EnumCards.PLAIN.ordinal(),			plainsG(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(pillarsH(x), 						EnumCards.PLAIN.ordinal(),			plainsH(x)));
+					}
+					if(ModConfig.ENABLE_VANILLA){
+						carving_bench_recipes.add(new CarvingBenchRecipe(vanillaPlain[x], 					EnumCards.PILLAR.ordinal(), 		pillarsVanilla(x)));
+						carving_bench_recipes.add(new CarvingBenchRecipe(plainsVanilla2(x), 				EnumCards.PILLAR.ordinal(), 		pillarsVanilla2(x)));
+						if(ModConfig.allowReverse){
+							carving_bench_recipes.add(new CarvingBenchRecipe(pillarsVanilla(x), 			EnumCards.PLAIN.ordinal(), 			vanillaPlain[x]));
+							carving_bench_recipes.add(new CarvingBenchRecipe(pillarsVanilla2(x), 			EnumCards.PLAIN.ordinal(), 			plainsVanilla2(x)));
+						}
+					}
+					if(ModConfig.ENABLE_CLAY){
+						carving_bench_recipes.add(new CarvingBenchRecipe(terracotta(15-x), 					EnumCards.PILLAR.ordinal(), 		pillarsClay(x)));
+						if(ModConfig.allowReverse){
+							carving_bench_recipes.add(new CarvingBenchRecipe(pillarsClay(x), 				EnumCards.PLAIN.ordinal(), 			terracotta(15-x)));
+						}
+					}
+					if(ModConfig.ENABLE_CONCRETE){
+						carving_bench_recipes.add(new CarvingBenchRecipe(concrete(15-x), 					EnumCards.PILLAR.ordinal(), 		pillarsConcrete(x)));
+						if(ModConfig.allowReverse){
+							carving_bench_recipes.add(new CarvingBenchRecipe(pillarsConcrete(x), 			EnumCards.PLAIN.ordinal(), 			concrete(15-x)));
+						}
+					}
+				}	
+
 				if(ModConfig.ENABLE_SHORTS){
 					carving_bench_recipes.add(new CarvingBenchRecipe(plainsA(x), 							EnumCards.SHORT.ordinal(), 			shortsA(x)));
 					carving_bench_recipes.add(new CarvingBenchRecipe(plainsB(x),						 	EnumCards.SHORT.ordinal(),			shortsB(x)));

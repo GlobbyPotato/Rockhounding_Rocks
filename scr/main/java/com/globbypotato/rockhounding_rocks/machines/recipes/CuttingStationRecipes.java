@@ -96,6 +96,27 @@ public class CuttingStationRecipes extends BaseRecipes{
 					}
 				}			
 	
+				if(ModConfig.ENABLE_PILLARS){
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsA(x), 							EnumCuts.PILLAR.ordinal(),			 		pillarsA(x)));
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsB(x), 							EnumCuts.PILLAR.ordinal(),				 	pillarsB(x)));
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsC(x),						 	EnumCuts.PILLAR.ordinal(),				 	pillarsC(x)));
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsD(x),						 	EnumCuts.PILLAR.ordinal(), 					pillarsD(x)));
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsE(x),							EnumCuts.PILLAR.ordinal(),				 	pillarsE(x)));
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsF(x), 							EnumCuts.PILLAR.ordinal(),				 	pillarsF(x)));
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsG(x), 							EnumCuts.PILLAR.ordinal(),				 	pillarsG(x)));
+					cutting_station_recipes.add(new CuttingStationRecipe(plainsH(x), 							EnumCuts.PILLAR.ordinal(),				 	pillarsH(x)));
+					if(ModConfig.ENABLE_VANILLA){
+						cutting_station_recipes.add(new CuttingStationRecipe(vanillaPlain[x], 					EnumCuts.PILLAR.ordinal(), 					pillarsVanilla(x)));
+						cutting_station_recipes.add(new CuttingStationRecipe(plainsVanilla2(x), 				EnumCuts.PILLAR.ordinal(), 					pillarsVanilla2(x)));
+					}
+					if(ModConfig.ENABLE_CLAY){
+						cutting_station_recipes.add(new CuttingStationRecipe(terracotta(15-x), 					EnumCuts.PILLAR.ordinal(),					pillarsClay(x)));
+					}
+					if(ModConfig.ENABLE_CONCRETE){
+						cutting_station_recipes.add(new CuttingStationRecipe(concrete(15-x), 					EnumCuts.PILLAR.ordinal(),					pillarsConcrete(x)));
+					}
+				}			
+
 				if(ModConfig.ENABLE_SHORTS){
 					cutting_station_recipes.add(new CuttingStationRecipe(plainsA(x), 							EnumCuts.SHORT.ordinal(), 					shortsA(x)));
 					cutting_station_recipes.add(new CuttingStationRecipe(plainsB(x), 							EnumCuts.SHORT.ordinal(),				 	shortsB(x)));

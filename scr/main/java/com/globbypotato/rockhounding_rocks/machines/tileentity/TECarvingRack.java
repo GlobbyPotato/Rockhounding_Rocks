@@ -20,7 +20,7 @@ public class TECarvingRack extends TileEntityInv {
 	public static int TOOL_SLOT = 1;
 
 	public TECarvingRack() {
-		super(inputSlots, 0, 0);
+		super(inputSlots, 0, 0, 0);
 		
 		this.input =  new MachineStackHandler(inputSlots, this){
 			@SuppressWarnings("synthetic-access")

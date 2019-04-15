@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 public class TileEntityIO extends TileEntityInv{
 
 	public TileEntityIO(int inputSlots, int outputSlots, int templateSlots) {
-		super(inputSlots, outputSlots, templateSlots);
+		super(inputSlots, outputSlots, templateSlots, 0);
 	}
 
 

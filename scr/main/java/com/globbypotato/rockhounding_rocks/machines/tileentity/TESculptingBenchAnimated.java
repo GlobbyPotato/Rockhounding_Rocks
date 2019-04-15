@@ -17,6 +17,7 @@ import net.minecraft.nbt.NBTTagCompound;
 public class TESculptingBenchAnimated extends TileEntityIO{
 
     public int rotation;
+    SculptingBenchRecipe currentRecipe = null;
 
 	public TESculptingBenchAnimated() {
 		super(0, 0, 0);
@@ -94,7 +95,7 @@ public class TESculptingBenchAnimated extends TileEntityIO{
 		if(!platformInput().isEmpty()){
 			for(int x = 0; x < recipeList().size(); x++){
 				if(CoreUtils.isMatchingIngredient(platformInput(), getRecipeList(x).getInput())){
-					if(hasValidTools()){
+					if(hasPattern()){
 						if(getRecipeList(x).getPattern() == getRack().patternSlot().getItemDamage()){
 							return getRecipeList(x);
 						}
@@ -105,20 +106,8 @@ public class TESculptingBenchAnimated extends TileEntityIO{
 		return null;
 	}
 
-	public boolean isValidRecipe() {
-		return getCurrentRecipe() != null;
-	}
-
-	private ItemStack recipeOutput() {
-		return isValidRecipe() ? getCurrentRecipe().getOutput() : ItemStack.EMPTY;
-	}
-
-	private int recipePattern() {
-		return isValidRecipe() ? getCurrentRecipe().getPattern() : 0;
-	}
-
 	private boolean canStackOutput() {
-		return hasPlatform() && this.output.canSetOrStack(platformOutput(), recipeOutput());
+		return hasPlatform() && this.output.canSetOrStack(platformOutput(), currentRecipe.getOutput());
 	}
 
 
@@ -129,8 +118,16 @@ public class TESculptingBenchAnimated extends TileEntityIO{
 		if(!world.isRemote){
 			checkCurrentState();
 
-			if(isValidRecipe()){
-				if(canStackOutput()){
+			if(platformInput().isEmpty() || !hasPattern()){
+				currentRecipe = null;
+				this.cooktime = 0;
+			}
+
+			if(currentRecipe == null){
+				currentRecipe = getCurrentRecipe();
+				this.cooktime = 0;
+			}else{
+				if(canStackOutput() && hasDummy()){
 					handleRotation();
 					this.cooktime++;
 					if(getCooktime() >= getCooktimeMax()) {
@@ -141,23 +138,26 @@ public class TESculptingBenchAnimated extends TileEntityIO{
 				}else{
 					tickOff();
 				}
-			}else{
-				tickOff();
 			}
 		}
 	}
 
-	private boolean hasValidTools() {
+	private boolean hasPattern() {
 		return hasRack() 
-			&& !getRack().patternSlot().isEmpty() && getRack().patternSlot().getItem() == ModItems.SCULPTING_CARDS
+			&& !getRack().patternSlot().isEmpty() && getRack().patternSlot().getItem() == ModItems.SCULPTING_CARDS;
+	}
+
+	private boolean hasDummy() {
+		return hasRack() 
 			&& !getRack().toolSlot().isEmpty() && getRack().toolSlot().isItemEqualIgnoreDurability(ToolUtils.dummy);
 	}
 
 	private void process() {
 		int unbreakingLevel = CoreUtils.getEnchantmentLevel(Enchantments.UNBREAKING, getRack().toolSlot());
-		platformGetOutput().setOrStack(TERockPlatform.OUTPUT_SLOT, recipeOutput());
+		platformGetOutput().setOrStack(TERockPlatform.OUTPUT_SLOT, currentRecipe.getOutput());
 		((MachineStackHandler)getRack().getInput()).damageUnbreakingSlot(unbreakingLevel, TECarvingRack.TOOL_SLOT);
 		platformGetInput().decrementSlot(TERockPlatform.INPUT_SLOT);
+		currentRecipe = null;
 	}
 
 	private void handleRotation() {
