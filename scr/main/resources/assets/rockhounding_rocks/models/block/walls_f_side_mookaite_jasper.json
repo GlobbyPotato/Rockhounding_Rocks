@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/mookaite_jasper/blocks_f_mookaite_jasper"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/pink_onyx/blocks_e_pink_onyx"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/noreena_jasper/blocks_f_noreena_jasper"
+    }
+}

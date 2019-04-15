@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/porcelain_jasper/blocks_f_porcelain_jasper"
+    }
+}
