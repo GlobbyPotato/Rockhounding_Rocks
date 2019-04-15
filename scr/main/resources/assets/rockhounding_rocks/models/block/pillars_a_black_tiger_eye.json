@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "rockhounding_rocks:blocks/black_tiger_eye/fluted_a_black_tiger_eye"
+    }
+}
