@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/green_tiger_eye/blocks_d_green_tiger_eye"
+    }
+}

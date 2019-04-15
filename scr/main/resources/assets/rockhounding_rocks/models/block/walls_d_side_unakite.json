@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/unakite/blocks_d_unakite"
+    }
+}
