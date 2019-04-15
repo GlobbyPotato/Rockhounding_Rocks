@@ -21,7 +21,8 @@ public enum EnumCuts implements BaseEnum {
 	STELE				("Stele"),
 	FOUNTAIN			("Fountain"),
 	LANTERN				("Lantern"),
-	TWISTED				("Twisted Slabs");
+	TWISTED				("Twisted Slabs"),
+	PILLAR				("Fluted Block");
 
 	private String name;
 	EnumCuts(String name){

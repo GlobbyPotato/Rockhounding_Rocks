@@ -4,6 +4,7 @@ import com.globbypotato.rockhounding_rocks.handler.ModConfig;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -19,6 +20,7 @@ import net.minecraft.tileentity.TileEntityBanner;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class FountainsIO extends MetaIO implements ISculpture{
@@ -103,6 +105,16 @@ public class FountainsIO extends MetaIO implements ISculpture{
 	    	}
     	}
     	return true;
+    }
+
+	@Override
+    public boolean isTopSolid(IBlockState state){
+        return false;
+    }
+
+	@Override
+    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face){
+        return BlockFaceShape.UNDEFINED;
     }
 
 }

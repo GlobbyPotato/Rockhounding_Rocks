@@ -14,7 +14,6 @@ public class ModConfig {
 	public static int bladeUses;
 	public static int dummyUses;
 	public static int sandpaperUses;
-	public static int manualRecipes;
 	public static boolean allowReverse;
 
 	public static boolean ENABLE_VANILLA;
@@ -24,9 +23,11 @@ public class ModConfig {
 	public static boolean ENABLE_DECO;
 	public static boolean ENABLE_SCULPT;
 	public static boolean ENABLE_HALF_SLAB;
+	public static boolean ENABLE_WALLS;
 
 	public static boolean ENABLE_POLISHED;
 	public static boolean ENABLE_BRICKS;
+	public static boolean ENABLE_PILLARS;
 	public static boolean ENABLE_SLABS;
 	public static boolean ENABLE_SHORTS;
 	public static boolean ENABLE_DEBOSSED;
@@ -68,7 +69,6 @@ public class ModConfig {
 		bladeUses = config.get(								"Absolute_misc",		"Cutting Blade uses",	1000,	"Uses for the blade inside the Cutting Station").getInt();
 		dummyUses = config.get(								"Absolute_misc",		"Dummy Hammer uses",	1000,	"Uses for the hammer inside the Carving Bench").getInt();
 		sandpaperUses = config.get(							"Absolute_misc",		"Sandpaper uses",		300,	"Uses for the sandpaper to clean a block pattern").getInt();
-		manualRecipes = config.get(							"Absolute_misc",		"Parts Crafting",		0,		"How to craft slabs and stairs. 0=manual, 1=both, 2=machine").getInt();
 		allowReverse = config.get(							"Absolute_misc",		"Reverse Carving", 		true,	"Allows to reverse the cuts from carved blocks to plain blocks").getBoolean();
 
 		ENABLE_DECO = config.get(							"Absolute_settings",	"All Carved Blocks", 	true,	"Enable/Disable all the blocks").getBoolean();
@@ -80,6 +80,7 @@ public class ModConfig {
 		ENABLE_POLISHED = config.get(						"Absolute_parts",		"Polished Blocks", 		true,	"Enable/Disable this block").getBoolean();
 		ENABLE_BRICKS = config.get(							"Absolute_parts",		"Bricks", 				true,	"Enable/Disable this block").getBoolean();
 		ENABLE_SLABS = config.get(							"Absolute_parts",		"Double Slabs", 		true,	"Enable/Disable this block").getBoolean();
+		ENABLE_PILLARS = config.get(						"Absolute_parts",		"Fluted Blocks", 		true,	"Enable/Disable this block").getBoolean();
 		ENABLE_SHORTS = config.get(							"Absolute_parts",		"Short Bricks", 		true,	"Enable/Disable this block").getBoolean();
 		ENABLE_DEBOSSED = config.get(						"Absolute_parts",		"Debossed Blocks", 		true,	"Enable/Disable this block").getBoolean();
 		ENABLE_FLOORS = config.get(							"Absolute_parts",		"Parquet Tiles", 		true,	"Enable/Disable this block").getBoolean();
@@ -97,6 +98,7 @@ public class ModConfig {
 		ENABLE_FOUNTAINS = config.get(						"Absolute_parts",		"Fountains", 			true,	"Enable/Disable this block").getBoolean();
 		ENABLE_LANTERNS = config.get(						"Absolute_parts",		"Lanterns", 			true,	"Enable/Disable this block").getBoolean();
 		ENABLE_HALF_SLAB = config.get(						"Absolute_parts",		"Half Slabs", 			true,	"Enable/Disable this block").getBoolean();
+		ENABLE_WALLS = config.get(							"Absolute_parts",		"Walls", 				true,	"Enable/Disable this block").getBoolean();
 
 		RocksGenerator.ROCKS_FREQUENCY[0]  = config.get(	"Black Aventurine", 	"Frequency", 	7).getInt();
 			RocksGenerator.ROCKS_BIOME[0]  = config.get(	"Black Aventurine", 	"Biome type", 	"LUSH").getString();

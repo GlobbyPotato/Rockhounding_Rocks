@@ -5,6 +5,7 @@ import javax.annotation.Nullable;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -39,6 +40,19 @@ public class SlabsIO extends MetaIO {
 	@Override
     public AxisAlignedBB getCollisionBoundingBox(IBlockState state, IBlockAccess worldIn, BlockPos pos){
         return this.tab ? LO_SLAB : HI_SLAB;
+    }
+
+	@Override
+    public boolean isTopSolid(IBlockState state){
+        return !this.tab;
+    }
+
+	@Override
+    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face){
+		if((face == EnumFacing.DOWN && this.tab) || (face == EnumFacing.UP && !this.tab)){
+            return BlockFaceShape.SOLID;
+        }
+        return BlockFaceShape.UNDEFINED;
     }
 
     @SideOnly(Side.CLIENT)

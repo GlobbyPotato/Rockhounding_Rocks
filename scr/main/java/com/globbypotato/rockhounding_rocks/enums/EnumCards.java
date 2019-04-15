@@ -10,7 +10,9 @@ public enum EnumCards implements BaseEnum {
 	FLOOR				("Parquet Tile"),
 	PAVES				("Paving Tile"),
 	TILE				("Tile"),
-	CARVED				("Carved Block");
+	CARVED				("Carved Block"),
+	PILLAR				("Fluted Block");
+
 
 	private String name;
 	EnumCards(String name){
