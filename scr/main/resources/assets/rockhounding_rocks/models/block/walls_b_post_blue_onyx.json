@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/blue_onyx/blocks_b_blue_onyx"
+    }
+}
