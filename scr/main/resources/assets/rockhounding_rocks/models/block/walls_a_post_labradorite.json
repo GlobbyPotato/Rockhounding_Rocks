@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/labradorite/blocks_a_labradorite"
+    }
+}
