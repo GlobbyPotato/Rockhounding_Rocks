@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/sodalite/blocks_b_sodalite"
+    }
+}

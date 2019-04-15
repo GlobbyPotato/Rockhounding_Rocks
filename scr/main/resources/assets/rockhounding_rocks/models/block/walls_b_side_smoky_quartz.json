@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/smoky_quartz/blocks_b_smoky_quartz"
+    }
+}

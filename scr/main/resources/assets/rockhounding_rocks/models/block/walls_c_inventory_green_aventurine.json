@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/green_aventurine/blocks_c_green_aventurine"
+    }
+}

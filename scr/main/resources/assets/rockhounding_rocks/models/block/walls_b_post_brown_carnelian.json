@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/brown_carnelian/blocks_b_brown_carnelian"
+    }
+}
