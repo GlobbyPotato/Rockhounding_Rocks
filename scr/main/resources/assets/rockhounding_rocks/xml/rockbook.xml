@@ -1,18 +1,16 @@
-<book title="Rockhounding Rocks Guide book" cover="rockhounding_rocks:gbook/cover" fontSize="0.7">
-	<include ref="gbook:xml/standard.xml" />
+<book title="Rockhounding Rocks Guide book" cover="rockhounding_rocks:gbook/cover" fontSize="0.6">
 	<include ref="rockhounding_rocks:xml/custom.xml" />
 
 	<chapter id="chapters">
 		<page id="index">
 			<title color="#CC3333">Table of contents</title>
-			<p> </p>
+			<p space="10" />
 			<link ref="readme:readme_page" color="#000066">-&gt; Readme first</link>
-			<link ref="changelog:changelog_page" color="#000066">-&gt; Changelog v3.10</link>
-			<p> </p>
-			<link ref="concept:concept_page" color="#000066">-&gt; Mod Concept</link>
-			<p> </p>
-			<link ref="resources:resources_page" color="#000066">-&gt; Resources</link>
-			<p> </p>
+			<p space="10" />
+			<link ref="readme:concept_page" color="#000066">-&gt; Mod Concept</link>
+			<p space="10" />
+			<link ref="readme:resources_page" color="#000066">-&gt; Resources</link>
+			<p space="10" />
 			<link ref="devices:devices_page" color="#000066">-&gt; Devices</link>
 		</page>
 	</chapter>
@@ -20,33 +18,19 @@
 				<chapter id="readme">
 					<page id="readme_page">
 						<link ref="chapters:index" color="#CC3333">&lt;- Readme first</link>
-						<p>If the size of this book doesn't allow an optimal reading, it is suggested to set the GUI scale to 0 in the Guidebook configuration file "gbook.cfg" or any suiting combination with the game GUI scale.</p>
-						<p></p>
-						<p>This book will try to describe all the parts of the mod and the steps to proceed into it.</p>
-						<p>The table of contents is divided into arguments, each one splitted into chapters. Each chapter eventually contains sorted lists of documentation.</p> 
-						<p>Clicking on the index elements will lead you to the proper page, while clicking on the page titles will lead you back to their direct parent index.</p>
+						<p>- If the size of this book doesn't allow an optimal reading, it is suggested to set the GUI scale to 0 in the Guidebook configuration "gbook.cfg" or a suiting combination with the game GUI scale.</p>
+						<p space="4" />
+						<p>- This book tries to describe all the parts of the mod and the steps to proceed into it. The table of contents is divided into the main arguments, each one splitted into chapters. Each chapter contains sorted lists of documentation.</p> 
+						<p space="4" />
+						<p>- For a faster navigation, clicking on the indexes leads you to the proper page, while clicking on the red page titles leads you back to its direct parent index.</p>
 					</page>
-				</chapter>
 
-				<chapter id="changelog">
-					<page id="changelog_page">
-						<link ref="chapters:index" color="#CC3333">&lt;- Changelog</link>
-						<p>> Minor tweaks</p>
-						<p>> Some texture fix</p>
-					</page>
-				</chapter>
-
-				<chapter id="concept">
 					<page id="concept_page">
 						<link ref="chapters:index" color="#CC3333">&lt;- Mod Concept</link>
 						<p>The mod is focused on producing decorating and building materials. It generates in the overworld a wide collection of rocks to search and process into building parts. Each rock is depicted with a reasonable typical real-life look and is provided in its raw and polished form. The rocks are spreaded through all the biome types to enhance exploration, hence a wider biome variety will be welcome for the best working.</p>
-					</page>
-					<page>
 						<p>The mod does not include blocks like slabs and stairs. Being them too many variants, it is suggested the use of ChiselAndBit to obtain any additional shape.</p>
 					</page>
-				</chapter>
 
-				<chapter id="resources">
 					<page id="resources_page">
 						<link ref="chapters:index" color="#CC3333">&lt;- Resources</link>
 						<p>The mod features 112 rocks plus some vanilla additions and uses 3 different methods to customize the generation, by acting on the config file. Each rock is provided of an enabler, a min/max vein size, a min/max level and a flavor biome type. There are also a generation frequency for each rock, to indicate how many tries will be done on the chunk and a generation chance, shared by all the rocks, to randomize further the appearing of the rocks. Independently of the method, each rock can be still disabled on its own. The entire generation can be also turned off. The Rocks Vending System will still grant access to them. The online wiki will explain the generation methods.</p>
@@ -56,7 +40,7 @@
 				<chapter id="devices">
 					<page id="devices_page">
 						<link ref="chapters:index" color="#CC3333">&lt;- Devices</link>
-						<p> </p>
+						<p space="4" />
 						<link ref="machines:machines_page" indent="8" color="#333399">-&gt; Machines</link>
 						<link ref="utils:utils_page" indent="8" color="#333399">-&gt; Utils</link>
 					</page>
@@ -65,15 +49,15 @@
 							<chapter id="machines">
 								<page id="machines_page">
 									<link ref="devices:devices_page" color="#CC3333">&lt;- Machines</link>
-									<p> </p>
+									<p space="10" />
 									<link ref="machs:rammer_page" indent="8" color="#333399">-&gt; Stone Rammer</link>
 									<link ref="machs:carving_page" indent="8" color="#333399">-&gt; Carving Bench</link>
 									<link ref="machs:sculpting_page" indent="8" color="#333399">-&gt; Sculpting Bench</link>
-									<p> </p>
+									<p space="10" />
 									<link ref="machs:wheel_page" indent="8" color="#333399">-&gt; Water Wheel</link>
 									<link ref="machs:rack_page" indent="8" color="#333399">-&gt; Carving Rack</link>
 									<link ref="machs:platform_page" indent="8" color="#333399">-&gt; Rock Platform</link>
-									<p> </p>
+									<p space="10" />
 									<link ref="machs:cutter_page" indent="8" color="#333399">-&gt; Cutting Station</link>
 									<link ref="machs:vendor_page" indent="8" color="#333399">-&gt; Rock Vendor</link>
 								</page>
@@ -82,19 +66,19 @@
 										<chapter id="machs">
 											<page id="rammer_page">
 												<link ref="machines:machines_page" color="#CC3333">&lt;- Stone Rammer</link>
-												<p>This multiblock allows to cut the raw rocks into Plain Blocks. Plain Blocks are the base of every cut. It requires a spinning Water Wheel on its left and a Rock Platform on its front (the side with the hammers).</p>
+												<p>This device allows to cut the raw rocks into Plain Blocks. Plain Blocks are the base of every cut. It requires a spinning Water Wheel on its left and a Rock Platform on its front (the side with the hammers).</p>
 												<image src="rockhounding_rocks:gbook/rammer" tw="150" th="111"/>
 											</page>
 
 											<page id="carving_page">
 												<link ref="machines:machines_page" color="#CC3333">&lt;- Carving Bench</link>
-												<p>This multiblock allows to chisel Plain Blocks into Chiseled Blocks. It requires a spinning Water Wheel on its left, a Rock Platform on its back and Carving Rack on its top. The Carving Rack must contain the desired Block Scheme and a Dummy Hammer.</p>
+												<p>This device allows to chisel Plain Blocks into chiseled blocks. It requires a spinning Water Wheel on its left, a Rock Platform on its back and Carving Rack on its top. The Carving Rack must contain the desired Block Scheme and a Dummy Hammer.</p>
 												<image src="rockhounding_rocks:gbook/carving" tw="114" th="130"/>
 											</page>
 											
 											<page id="sculpting_page">
 												<link ref="machines:machines_page" color="#CC3333">&lt;- Sculpting Bench</link>
-												<p>This multiblock allows to sculpt Plain Blocks into Columns and sculptures. It requires a spinning Water Wheel on its left, a Rock Platform on its back and Carving Rack on its top. The Carving Rack must contain the desired Sculpting Scheme and a Dummy Hammer. Carved blocks can be cleaned again into Plain Blocks.</p>
+												<p>This device allows to sculpt Plain Blocks into columns and sculptures. It requires a spinning Water Wheel on its left, a Rock Platform on its back and Carving Rack on its top. The Carving Rack must contain the desired Sculpting Scheme and a Dummy Hammer. Carved blocks can be cleaned again into Plain Blocks.</p>
 												<image src="rockhounding_rocks:gbook/sculpting" tw="106" th="130"/>
 											</page>
 
@@ -132,11 +116,11 @@
 							<chapter id="utils">
 								<page id="utils_page">
 									<link ref="devices:devices_page" color="#CC3333">&lt;- Utils</link>
-									<p> </p>
+									<p space="10" />
 									<link ref="tools:material_page" indent="8" color="#333399">-&gt; Materials</link>
 									<link ref="tools:hammer_page" indent="8" color="#333399">-&gt; Dummy Hammer</link>
 									<link ref="tools:schemes_page" indent="8" color="#333399">-&gt; Schemes</link>
-									<p> </p>
+									<p space="10" />
 									<link ref="tools:finder_page" indent="8" color="#333399">-&gt; Rock Finder</link>
 									<link ref="tools:sandpaper_page" indent="8" color="#333399">-&gt; Sandpaper</link>
 									<link ref="tools:blade_page" indent="8" color="#333399">-&gt; Cutting Blade</link>
@@ -146,7 +130,7 @@
 										<chapter id="tools">
 											<page id="material_page">
 												<link ref="utils:utils_page" color="#CC3333">&lt;- Materials</link>
-												<p>Blocks and items for the low tech devices are made mostly of treated timbers. They are obtaining by crafting a plank with a bottle of fish oil.</p>
+												<p>Blocks and items for the low tech devices are made mostly of treated timbers. They are obtained by crafting a plank with a bottle of fish oil.</p>
 												<stack_two>
 													<stack item="rockhounding_rocks:misc_items" meta="1" />
 													<stack item="rockhounding_rocks:misc_items" meta="3" />
@@ -154,7 +138,7 @@
 											</page>
 											<page id="hammer_page">
 												<link ref="utils:utils_page" color="#CC3333">&lt;- Dummy Hammer</link>
-												<p>The Dummy hammer is a consumable used in the Carving Bench and the Sculpting Bench and gets damaged every process. It must be inserted in the Carving Rack when the device is assembled.</p>
+												<p>The Dummy hammer is a consumable used in the Carving Bench and the Sculpting Bench and gets damaged every process. It must be inserted in the Carving Rack when the device is assembled. The Dummy Hammer can be enchanted with the Unbreaking enchantment to make it last longer.</p>
 												<stack item="rockhounding_rocks:dummy_hammer" meta="0" />
 											</page>
 											<page id="schemes_page">
@@ -178,7 +162,9 @@
 											<page id="blade_page">
 												<link ref="utils:utils_page" color="#CC3333">&lt;- Cutting Blade</link>
 												<p>The cutting Blade is a consumable used inside the Cutting Station and gets damaged every process. It can be enchanted to improve the process performance.</p>
+												<p space="2" />
 												<p>- Unbreaking will preserve the durability of the blade depending on its level.</p>
+												<p space="2" />
 												<p>- Efficiency will consume less water depending on its level.</p>
 												<stack item="rockhounding_rocks:cutting_blade" meta="0" />
 											</page>

@@ -1,0 +1,5 @@
+{
+	"recipes": {
+		"bottle_shapeless": "com.globbypotato.rockhounding_rocks.utils.ShapelessBottle$Factory"
+	}
+}

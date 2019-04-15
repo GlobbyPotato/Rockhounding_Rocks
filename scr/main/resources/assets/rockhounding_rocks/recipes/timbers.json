@@ -1,5 +1,5 @@
 {
-	"type": "minecraft:crafting_shapeless",
+	"type": "rockhounding_rocks:bottle_shapeless",
 	"group": "rockhounding_rocks:utils",
 	"ingredients":[
 		{
