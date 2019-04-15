@@ -114,6 +114,19 @@ public class BaseRecipes {
 	public static ItemStack slabsClay(int meta) {return new ItemStack(ModBlocks.SLABS_CLAY, 1, meta);}
 	public static ItemStack slabsConcrete(int meta) {return new ItemStack(ModBlocks.SLABS_CONCRETE, 1, meta);}
 
+	public static ItemStack pillarsA(int meta) {return new ItemStack(ModBlocks.PILLARS_A, 1, meta);}
+	public static ItemStack pillarsB(int meta) {return new ItemStack(ModBlocks.PILLARS_B, 1, meta);}
+	public static ItemStack pillarsC(int meta) {return new ItemStack(ModBlocks.PILLARS_C, 1, meta);}
+	public static ItemStack pillarsD(int meta) {return new ItemStack(ModBlocks.PILLARS_D, 1, meta);}
+	public static ItemStack pillarsE(int meta) {return new ItemStack(ModBlocks.PILLARS_E, 1, meta);}
+	public static ItemStack pillarsF(int meta) {return new ItemStack(ModBlocks.PILLARS_F, 1, meta);}
+	public static ItemStack pillarsG(int meta) {return new ItemStack(ModBlocks.PILLARS_G, 1, meta);}
+	public static ItemStack pillarsH(int meta) {return new ItemStack(ModBlocks.PILLARS_H, 1, meta);}
+	public static ItemStack pillarsVanilla(int meta) {return new ItemStack(ModBlocks.PILLARS_VANILLA, 1, meta);}
+	public static ItemStack pillarsVanilla2(int meta) {return new ItemStack(ModBlocks.PILLARS_VANILLA2, 1, meta);}
+	public static ItemStack pillarsClay(int meta) {return new ItemStack(ModBlocks.PILLARS_CLAY, 1, meta);}
+	public static ItemStack pillarsConcrete(int meta) {return new ItemStack(ModBlocks.PILLARS_CONCRETE, 1, meta);}
+
 	public static ItemStack shortsA(int meta) {return new ItemStack(ModBlocks.SHORTS_A, 1, meta);}
 	public static ItemStack shortsB(int meta) {return new ItemStack(ModBlocks.SHORTS_B, 1, meta);}
 	public static ItemStack shortsC(int meta) {return new ItemStack(ModBlocks.SHORTS_C, 1, meta);}
@@ -321,6 +334,15 @@ public class BaseRecipes {
 	public static ItemStack twistedVanilla2(int meta) {return new ItemStack(ModBlocks.TWISTED_VANILLA2, 1, meta);}
 	public static ItemStack twistedClay(int meta) {return new ItemStack(ModBlocks.TWISTED_CLAY, 1, meta);}
 	public static ItemStack twistedConcrete(int meta) {return new ItemStack(ModBlocks.TWISTED_CONCRETE, 1, meta);}
+
+	public static ItemStack wallsA(int num, int meta) {return new ItemStack(ModBlocks.WALLS_A, num, meta);}
+	public static ItemStack wallsB(int num, int meta) {return new ItemStack(ModBlocks.WALLS_B, num, meta);}
+	public static ItemStack wallsC(int num, int meta) {return new ItemStack(ModBlocks.WALLS_C, num, meta);}
+	public static ItemStack wallsD(int num, int meta) {return new ItemStack(ModBlocks.WALLS_D, num, meta);}
+	public static ItemStack wallsE(int num, int meta) {return new ItemStack(ModBlocks.WALLS_E, num, meta);}
+	public static ItemStack wallsF(int num, int meta) {return new ItemStack(ModBlocks.WALLS_F, num, meta);}
+	public static ItemStack wallsG(int num, int meta) {return new ItemStack(ModBlocks.WALLS_G, num, meta);}
+	public static ItemStack wallsH(int num, int meta) {return new ItemStack(ModBlocks.WALLS_H, num, meta);}
 
 	public static ItemStack plain_slabsA(int num, int meta) {return new ItemStack(ModBlocks.HALF_BLOCKS_A_LO, num, meta);}
 	public static ItemStack plain_slabsB(int num, int meta) {return new ItemStack(ModBlocks.HALF_BLOCKS_B_LO, num, meta);}

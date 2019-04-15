@@ -1,0 +1,20 @@
+{
+    "variants": {
+		"type=apache_rhyolite": 		{"model" : "rockhounding_rocks:pillars_h_apache_rhyolite"},
+		"type=ammolite": 			{"model" : "rockhounding_rocks:pillars_h_ammolite"},
+		"type=dendritic_opal": 		{"model" : "rockhounding_rocks:pillars_h_dendritic_opal"},
+		"type=oolite": 			{"model" : "rockhounding_rocks:pillars_h_oolite"},
+		"type=gray_schist": 	{"model" : "rockhounding_rocks:pillars_h_gray_schist"},
+		"type=guadalupe_jasper": 			{"model" : "rockhounding_rocks:pillars_h_guadalupe_jasper"},
+ 		"type=tree_agate":	{"model" : "rockhounding_rocks:pillars_h_tree_agate"},
+		"type=blue_schist": 		{"model" : "rockhounding_rocks:pillars_h_blue_schist"},
+		"type=umber": 		{"model" : "rockhounding_rocks:pillars_h_umber"},
+		"type=breccia": 		{"model" : "rockhounding_rocks:pillars_h_breccia"},
+		"type=actinolite": 	{"model" : "rockhounding_rocks:pillars_h_actinolite"},
+		"type=madagascar_rhyolite": 	{"model" : "rockhounding_rocks:pillars_h_madagascar_rhyolite"},
+		"type=wonderstone": 	{"model" : "rockhounding_rocks:pillars_h_wonderstone"},
+		"type=opal": 		{"model" : "rockhounding_rocks:pillars_h_opal"},
+		"type=apatite": 			{"model" : "rockhounding_rocks:pillars_h_apatite"},
+		"type=eclogite": 			{"model" : "rockhounding_rocks:pillars_h_eclogite"}
+   }
+}

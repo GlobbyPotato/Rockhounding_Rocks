@@ -28,6 +28,14 @@ import com.globbypotato.rockhounding_rocks.blocks.decos.RocksG;
 import com.globbypotato.rockhounding_rocks.blocks.decos.RocksH;
 import com.globbypotato.rockhounding_rocks.blocks.decos.RocksVanilla;
 import com.globbypotato.rockhounding_rocks.blocks.decos.RocksVanilla2;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsA;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsB;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsC;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsD;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsE;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsF;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsG;
+import com.globbypotato.rockhounding_rocks.blocks.decos.WallsH;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.ColumnsA;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.ColumnsB;
 import com.globbypotato.rockhounding_rocks.blocks.pillars.ColumnsC;
@@ -245,6 +253,15 @@ public class ModBlocks {
 	public static final Block BLOCKS_H = new RocksH(EnumRocksH.getNames(), "blocks_h");
 	public static final Block BLOCKS_VANILLA2 = new PlainVanilla2(EnumVanilla2.getNames(), "blocks_vanilla2");
 
+	public static final Block WALLS_A = new WallsA(EnumRocksA.getNames(), "walls_a");
+	public static final Block WALLS_B = new WallsB(EnumRocksB.getNames(), "walls_b");
+	public static final Block WALLS_C = new WallsC(EnumRocksC.getNames(), "walls_c");
+	public static final Block WALLS_D = new WallsD(EnumRocksD.getNames(), "walls_d");
+	public static final Block WALLS_E = new WallsE(EnumRocksE.getNames(), "walls_e");
+	public static final Block WALLS_F = new WallsF(EnumRocksF.getNames(), "walls_f");
+	public static final Block WALLS_G = new WallsG(EnumRocksG.getNames(), "walls_g");
+	public static final Block WALLS_H = new WallsH(EnumRocksH.getNames(), "walls_h");
+
 	public static final Block POLISHED_A = new RocksA(EnumRocksA.getNames(), "polished_a");
 	public static final Block POLISHED_B = new RocksB(EnumRocksB.getNames(), "polished_b");
 	public static final Block POLISHED_C = new RocksC(EnumRocksC.getNames(), "polished_c");
@@ -296,6 +313,19 @@ public class ModBlocks {
 	public static final Block SLABS_VANILLA = new RocksVanilla(EnumVanilla.getNames(), "slabs_vanilla");
 	public static final Block SLABS_VANILLA2 = new RocksVanilla2(EnumVanilla2.getNames(), "slabs_vanilla2");
 	public static final Block SLABS_CONCRETE = new RocksConcrete(EnumConcrete.getNames(), "slabs_concrete");
+
+	public static final Block PILLARS_A = new RocksA(EnumRocksA.getNames(), "pillars_a");
+	public static final Block PILLARS_B = new RocksB(EnumRocksB.getNames(), "pillars_b");
+	public static final Block PILLARS_C = new RocksC(EnumRocksC.getNames(), "pillars_c");
+	public static final Block PILLARS_D = new RocksD(EnumRocksD.getNames(), "pillars_d");
+	public static final Block PILLARS_E = new RocksE(EnumRocksE.getNames(), "pillars_e");
+	public static final Block PILLARS_F = new RocksF(EnumRocksF.getNames(), "pillars_f");
+	public static final Block PILLARS_G = new RocksG(EnumRocksG.getNames(), "pillars_g");
+	public static final Block PILLARS_H = new RocksH(EnumRocksH.getNames(), "pillars_h");
+	public static final Block PILLARS_CLAY = new RocksClay(EnumClay.getNames(), "pillars_clay");
+	public static final Block PILLARS_VANILLA = new RocksVanilla(EnumVanilla.getNames(), "pillars_vanilla");
+	public static final Block PILLARS_VANILLA2 = new RocksVanilla2(EnumVanilla2.getNames(), "pillars_vanilla2");
+	public static final Block PILLARS_CONCRETE = new RocksConcrete(EnumConcrete.getNames(), "pillars_concrete");
 
 	public static final Block SHORTS_A = new RocksA(EnumRocksA.getNames(), "shorts_a");
 	public static final Block SHORTS_B = new RocksB(EnumRocksB.getNames(), "shorts_b");
@@ -834,6 +864,27 @@ public class ModBlocks {
 					}			
 				}
 
+				if(ModConfig.ENABLE_PILLARS){
+					registry.register(PILLARS_A);
+					registry.register(PILLARS_B);
+					registry.register(PILLARS_C);
+					registry.register(PILLARS_D);
+					registry.register(PILLARS_E);
+					registry.register(PILLARS_F);
+					registry.register(PILLARS_G);
+					registry.register(PILLARS_H);
+					if(ModConfig.ENABLE_CLAY){
+						registry.register(PILLARS_CLAY);
+					}
+					if(ModConfig.ENABLE_VANILLA){
+						registry.register(PILLARS_VANILLA);
+						registry.register(PILLARS_VANILLA2);
+					}
+					if(ModConfig.ENABLE_CONCRETE){
+						registry.register(PILLARS_CONCRETE);
+					}			
+				}
+
 				if(ModConfig.ENABLE_SHORTS){
 					registry.register(SHORTS_A);
 					registry.register(SHORTS_B);
@@ -1242,6 +1293,18 @@ public class ModBlocks {
 				}
 			}
 
+			if(ModConfig.ENABLE_WALLS){
+				registry.register(WALLS_A);
+				registry.register(WALLS_B);
+				registry.register(WALLS_C);
+				registry.register(WALLS_D);
+				registry.register(WALLS_E);
+				registry.register(WALLS_F);
+				registry.register(WALLS_G);
+				registry.register(WALLS_H);
+			}
+
+
 		}
 
 		// register the itemblock
@@ -1425,6 +1488,27 @@ public class ModBlocks {
 					}
 					if(ModConfig.ENABLE_CONCRETE){
 						registry.register(new BaseMetaIB(SLABS_CONCRETE, EnumConcrete.getNames()).setRegistryName(SLABS_CONCRETE.getRegistryName()));
+					}
+				}
+
+				if(ModConfig.ENABLE_PILLARS){
+					registry.register(new BaseMetaIB(PILLARS_A, EnumRocksA.getNames()).setRegistryName(PILLARS_A.getRegistryName()));
+					registry.register(new BaseMetaIB(PILLARS_B, EnumRocksB.getNames()).setRegistryName(PILLARS_B.getRegistryName()));
+					registry.register(new BaseMetaIB(PILLARS_C, EnumRocksC.getNames()).setRegistryName(PILLARS_C.getRegistryName()));
+					registry.register(new BaseMetaIB(PILLARS_D, EnumRocksD.getNames()).setRegistryName(PILLARS_D.getRegistryName()));
+					registry.register(new BaseMetaIB(PILLARS_E, EnumRocksE.getNames()).setRegistryName(PILLARS_E.getRegistryName()));
+					registry.register(new BaseMetaIB(PILLARS_F, EnumRocksF.getNames()).setRegistryName(PILLARS_F.getRegistryName()));
+					registry.register(new BaseMetaIB(PILLARS_G, EnumRocksG.getNames()).setRegistryName(PILLARS_G.getRegistryName()));
+					registry.register(new BaseMetaIB(PILLARS_H, EnumRocksH.getNames()).setRegistryName(PILLARS_H.getRegistryName()));
+					if(ModConfig.ENABLE_CLAY){
+						registry.register(new BaseMetaIB(PILLARS_CLAY, EnumClay.getNames()).setRegistryName(PILLARS_CLAY.getRegistryName()));
+					}
+					if(ModConfig.ENABLE_VANILLA){
+						registry.register(new BaseMetaIB(PILLARS_VANILLA, EnumVanilla.getNames()).setRegistryName(PILLARS_VANILLA.getRegistryName()));
+						registry.register(new BaseMetaIB(PILLARS_VANILLA2, EnumVanilla2.getNames()).setRegistryName(PILLARS_VANILLA2.getRegistryName()));
+					}
+					if(ModConfig.ENABLE_CONCRETE){
+						registry.register(new BaseMetaIB(PILLARS_CONCRETE, EnumConcrete.getNames()).setRegistryName(PILLARS_CONCRETE.getRegistryName()));
 					}
 				}
 
@@ -1835,6 +1919,17 @@ public class ModBlocks {
 					}
 				}
 			}
+			
+			if(ModConfig.ENABLE_WALLS){
+				registry.register(new BaseMetaIB(WALLS_A, EnumRocksA.getNames()).setRegistryName(WALLS_A.getRegistryName()));
+				registry.register(new BaseMetaIB(WALLS_B, EnumRocksB.getNames()).setRegistryName(WALLS_B.getRegistryName()));
+				registry.register(new BaseMetaIB(WALLS_C, EnumRocksC.getNames()).setRegistryName(WALLS_C.getRegistryName()));
+				registry.register(new BaseMetaIB(WALLS_D, EnumRocksD.getNames()).setRegistryName(WALLS_D.getRegistryName()));
+				registry.register(new BaseMetaIB(WALLS_E, EnumRocksE.getNames()).setRegistryName(WALLS_E.getRegistryName()));
+				registry.register(new BaseMetaIB(WALLS_F, EnumRocksF.getNames()).setRegistryName(WALLS_F.getRegistryName()));
+				registry.register(new BaseMetaIB(WALLS_G, EnumRocksG.getNames()).setRegistryName(WALLS_G.getRegistryName()));
+				registry.register(new BaseMetaIB(WALLS_H, EnumRocksH.getNames()).setRegistryName(WALLS_H.getRegistryName()));
+			}
 		}
 
 		// register the item model
@@ -2017,6 +2112,27 @@ public class ModBlocks {
 					}
 					if(ModConfig.ENABLE_CONCRETE){
 						RegistryHandler.registerMetaModel(SLABS_CONCRETE, EnumConcrete.getNames());
+					}
+				}
+
+				if(ModConfig.ENABLE_PILLARS){
+					RegistryHandler.registerMetaModel(PILLARS_A, EnumRocksA.getNames());
+					RegistryHandler.registerMetaModel(PILLARS_B, EnumRocksB.getNames());
+					RegistryHandler.registerMetaModel(PILLARS_C, EnumRocksC.getNames());
+					RegistryHandler.registerMetaModel(PILLARS_D, EnumRocksD.getNames());
+					RegistryHandler.registerMetaModel(PILLARS_E, EnumRocksE.getNames());
+					RegistryHandler.registerMetaModel(PILLARS_F, EnumRocksF.getNames());
+					RegistryHandler.registerMetaModel(PILLARS_G, EnumRocksG.getNames());
+					RegistryHandler.registerMetaModel(PILLARS_H, EnumRocksH.getNames());
+					if(ModConfig.ENABLE_CLAY){
+						RegistryHandler.registerMetaModel(PILLARS_CLAY, EnumClay.getNames());
+					}
+					if(ModConfig.ENABLE_VANILLA){
+						RegistryHandler.registerMetaModel(PILLARS_VANILLA, EnumVanilla.getNames());
+						RegistryHandler.registerMetaModel(PILLARS_VANILLA2, EnumVanilla2.getNames());
+					}
+					if(ModConfig.ENABLE_CONCRETE){
+						RegistryHandler.registerMetaModel(PILLARS_CONCRETE, EnumConcrete.getNames());
 					}
 				}
 
@@ -2428,6 +2544,16 @@ public class ModBlocks {
 				}
 			}
 
+			if(ModConfig.ENABLE_WALLS){
+				RegistryHandler.registerMetaModel(WALLS_A, EnumRocksA.getNames());
+				RegistryHandler.registerMetaModel(WALLS_B, EnumRocksB.getNames());
+				RegistryHandler.registerMetaModel(WALLS_C, EnumRocksC.getNames());
+				RegistryHandler.registerMetaModel(WALLS_D, EnumRocksD.getNames());
+				RegistryHandler.registerMetaModel(WALLS_E, EnumRocksE.getNames());
+				RegistryHandler.registerMetaModel(WALLS_F, EnumRocksF.getNames());
+				RegistryHandler.registerMetaModel(WALLS_G, EnumRocksG.getNames());
+				RegistryHandler.registerMetaModel(WALLS_H, EnumRocksH.getNames());
+			}
 		}
 	}
 
