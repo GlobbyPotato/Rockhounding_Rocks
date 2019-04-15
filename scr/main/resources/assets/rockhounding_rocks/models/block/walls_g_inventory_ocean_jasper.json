@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_inventory",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/ocean_jasper/blocks_g_ocean_jasper"
+    }
+}

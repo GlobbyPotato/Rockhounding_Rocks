@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/dendritic_opal/blocks_h_dendritic_opal"
+    }
+}

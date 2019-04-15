@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_post",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/actinolite/blocks_h_actinolite"
+    }
+}
