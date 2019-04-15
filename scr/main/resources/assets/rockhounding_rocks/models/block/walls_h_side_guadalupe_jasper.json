@@ -1,0 +1,6 @@
+{
+    "parent": "block/wall_side",
+    "textures": {
+        "wall": "rockhounding_rocks:blocks/guadalupe_jasper/blocks_h_guadalupe_jasper"
+    }
+}
