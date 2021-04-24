@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLInterModComms;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MODID, version = Reference.VERSION, dependencies = "required-after:rockhounding_core@[3.17,); required-after:gbook@[2.8,);")
+@Mod(modid = Reference.MODID, version = Reference.VERSION, dependencies = "required-after:rockhounding_core@[3.23,); required-after:gbook@[2.8,);")
 public class Rhrocks {
 
 	@Instance(Reference.MODID)

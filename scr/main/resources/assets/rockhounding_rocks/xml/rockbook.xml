@@ -165,6 +165,8 @@
 												<p space="2" />
 												<p>- Unbreaking will preserve the durability of the blade depending on its level.</p>
 												<p space="2" />
+												<p>- Sharpness will decrease the working time for each cut.</p>
+												<p space="2" />
 												<p>- Efficiency will consume less water depending on its level.</p>
 												<stack item="rockhounding_rocks:cutting_blade" meta="0" />
 											</page>

@@ -23,7 +23,6 @@ public class TECarvingRack extends TileEntityInv {
 		super(inputSlots, 0, 0, 0);
 		
 		this.input =  new MachineStackHandler(inputSlots, this){
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public ItemStack insertItem(int slot, ItemStack insertingStack, boolean simulate){
 				if(slot == PATTERN_SLOT && !insertingStack.isEmpty() && isValidPattern(insertingStack)){

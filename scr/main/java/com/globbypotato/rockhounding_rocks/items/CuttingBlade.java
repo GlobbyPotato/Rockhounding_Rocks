@@ -22,6 +22,6 @@ public class CuttingBlade extends ConsumableIO {
 
     @Override
     public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-    	return enchantment.type == EnumEnchantmentType.DIGGER;
+    	return enchantment.type == EnumEnchantmentType.DIGGER || enchantment.type == EnumEnchantmentType.WEAPON;
     }
 }

@@ -53,7 +53,6 @@ public class TECuttingStation extends TileEntityFueledTank{
 		this.inputTank.setCanDrain(false);
 
 		this.input =  new MachineStackHandler(inputSlots, this){
-			@SuppressWarnings("synthetic-access")
 			@Override
 			public ItemStack insertItem(int slot, ItemStack insertingStack, boolean simulate){
 				if (slot == fuelID() && isGatedPowerSource(insertingStack)){
@@ -230,12 +229,22 @@ public class TECuttingStation extends TileEntityFueledTank{
 	}
 
 	private void process() {
-		int unbreakingLevel = CoreUtils.getEnchantmentLevel(Enchantments.UNBREAKING, bladeSlot());
 		this.output.setOrStack(OUTPUT_SLOT, currentRecipe.getOutput());
 		this.input.drainOrCleanFluid(this.inputTank, getConsumedWater(), false);
-		this.input.damageUnbreakingSlot(unbreakingLevel, CONSUMABLE_SLOT);
+		
+		damageOrRepairConsumable();
+		
 		this.input.decrementSlot(INPUT_SLOT);
 		currentRecipe = null;
+	}
+
+	private void damageOrRepairConsumable() {
+		int unbreakingLevel = CoreUtils.getEnchantmentLevel(Enchantments.UNBREAKING, bladeSlot());
+		this.input.damageUnbreakingSlot(unbreakingLevel, CONSUMABLE_SLOT);
+
+		if(CoreUtils.hasMending(bladeSlot()) && this.rand.nextInt(CoreUtils.mendingFactor) == 0) {
+			this.input.repairMendingSlot(CONSUMABLE_SLOT);
+		}
 	}
 
 }
