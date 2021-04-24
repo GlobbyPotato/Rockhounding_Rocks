@@ -10,7 +10,6 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
-
 group = "com.globbypotato.rockhounding_rocks"
 archivesBaseName = "rockhounding_rocks"
 version = "${version_mc}-${version_mod}"
@@ -19,7 +18,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 minecraft {
-    version = "1.12.2-14.23.5.2775"
+    version = "1.12.2-14.23.5.2847"
     runDir = "run"
     mappings = "snapshot_20171003"
     makeObfSourceJar = false
@@ -31,7 +30,7 @@ repositories {
 		url "http://dvs1.progwml6.com/files/maven"
 	}
     maven { // CraftTweaker
-        url "http://maven.blamejared.com/"
+        url "http://maven.blamejared.com"
     }
     maven { // Hwyla
 		url "http://tehnut.info/maven" 
@@ -57,8 +56,8 @@ dependencies {
     deobfCompile "mcp.mobius.waila:Hwyla:${version_wa}"
 //    deobfCompile "gigaherz.guidebook:Guidebook-${version_gb}"
 	compile files("lib/rockhounding_core-${version_mc}-${version_core}.jar")
-	compile files("lib/Guidebook-1.12.2-2.8.3.jar")
-	compile files("lib/CraftTweaker2-1.12-4.1.9.jar")
+	compile files("lib/Guidebook-1.12.2-2.9.4.jar")
+	compile files("lib/CraftTweaker2-1.12-4.1.20.636.jar")
 }
 
 processResources {
